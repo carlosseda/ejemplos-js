@@ -1,0 +1,9 @@
+#square{
+    width: 5rem;
+    height: 5rem;
+    background-color: hsl(0, 100%, 50%);
+}
+
+#square.active{
+    background-color: hsl(246, 100%, 50%);
+}
