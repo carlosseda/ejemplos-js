@@ -1,11 +1,12 @@
 #square{
-    width: 5rem;
-    height: 5rem;
     background-color: hsl(0, 100%, 50%);
+    cursor: pointer;
+    height: 5rem;
     left: 0;
     position: fixed;
     top: 0;
     transition: left 2s;
+    width: 5rem;
 }
 
 #square.active{
