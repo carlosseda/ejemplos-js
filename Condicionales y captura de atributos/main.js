@@ -24,6 +24,7 @@ showAge.addEventListener("click", () => {
     // Si queremos comprobar más de una condición podemos utilizar else if y meter 
     // entre parentesis una segunda condición, por último si queremos que si no se 
     // cumple ninguna condición se ejecute a su vez algo podemos utilizar else. 
+
     if(age.value < 18) {
         alert("Lo siento, eres demasiado pequeño para ver esta web");
     }else if(age.value >= 18) {
@@ -45,5 +46,6 @@ plusAge.addEventListener("click", () => {
 
     // Por último, podemos dar un nuevo valor al atributo value del input
     // "age", escribiendo después del igual el nuevo valor que queramos que tenga.
+    
     age.value = (parseInt(age.value) + 1);
 });
