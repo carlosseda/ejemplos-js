@@ -2,7 +2,10 @@
 // "let" y luego el nombre de la variable, el cual puede ser cualquiera que 
 // queramos, pero no puede empezar por un numero, ni puede contener espacios. El
 // nombre tiene que ser escrito en minusculas y debe ser lo más descriptivo 
-// posible. En este caso la variable "square" hace referencia a un elemento
+// posible. Otras alternativas son sustituir "let" por las palabras "var" (en desuso)
+// o "const" (para declarar constantes).
+
+// En este caso la variable "square" hace referencia a un elemento
 // HTML que se encuentra en el archivo index.html, que tiene una id "square".
 let square = document.getElementById("square");
 
