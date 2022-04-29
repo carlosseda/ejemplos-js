@@ -1,0 +1,27 @@
+.squares, .squares-related{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.square, .square-related{
+    cursor: pointer;
+    height: 5rem;
+    opacity: 1;
+    width: 5rem;
+}
+
+.square.red, .square-related.red{
+    background-color: red;
+}
+
+.square.green, .square-related.green{
+    background-color: green;
+}
+
+.square.blue, .square-related.blue{
+    background-color: blue;
+}
+
+.square.active, .square-related.active{
+    opacity: 0.5;
+}
