@@ -1,0 +1,30 @@
+#notification{
+    background-color: green;
+    bottom: 5vh;
+    min-height: 2rem;
+    opacity: 0;
+    padding: 2rem;
+    position: fixed;
+    right: 5%;
+    transition: opacity 0.5s;
+    width: 20%;
+    z-index: -1;
+}
+
+#notification.active{
+    opacity: 1;
+    z-index: 5000;
+}
+
+#notification.success{
+    background-color: hsl(120, 100%, 25%);
+}
+
+#notification.error{
+    background-color: hsl(0, 100%, 50%);
+}
+
+#notification span{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
