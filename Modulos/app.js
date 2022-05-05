@@ -6,5 +6,7 @@
 // "from" para indicar el nombre del archivo que contiene el módulo. 
 
 import {renderTabs} from './tabs.js';
+import {renderMenuButton} from './menu-button.js';
 
 renderTabs();
+renderMenuButton();
