@@ -16,10 +16,6 @@ let square = document.getElementById("square");
 square.addEventListener("click", () => {
 
     // En la siguiente línea se añade una clase "active" al elemento HTML que tiene
-    // una id "square". 
-    // square.classList.add("active"); 
-
-    // En la siguiente línea se añade una clase "active" al elemento HTML que tiene
     // una id "square" si no tiene la clase, y se la quita si la tiene.  
     square.classList.toggle("active"); 
 });

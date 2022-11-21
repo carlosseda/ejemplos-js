@@ -48,6 +48,17 @@ sendButton.addEventListener("click", () => {
 
         hello(inputName.value);
 
+        // Podemos recoger el valor de todos los inputs de un formulario mediante el objeto FormData. 
+        // Para ello debemos pasar como parámetro el formulario al que queremos acceder. 
+        let formData = new FormData(form);
+        // Podemos añaadir un nuevo dato al objeto FormData mediante el método append.
+        formData.append("fingerprint", "123456789");
+
+        // Podemos recorrer el objeto FormData mediante un bucle for...of.
+        for (let pair of formData.entries()) {
+            console.log(pair[0]+ ', ' + pair[1]); 
+        }
+        
     }else{
         
         alert("Debes ser mayor de edad para enviar el formulario");
