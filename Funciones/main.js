@@ -19,7 +19,7 @@ function hello(name) {
 
 //2. También podemos declarar una función mediante una variable que tenga como valor una función anónima. En este caso la función se llama "validateAge" y 
 // recibe un parámetro llamado "age".
-let validateAge = (age) => {
+let validateAge = age => {
 
     // Normalmente una función devolverá un resultado. En este caso la función devolverá un booleano.
     if(age < 18) {
@@ -47,22 +47,18 @@ sendButton.addEventListener("click", () => {
     if(validation) {
 
         hello(inputName.value);
-
-        // Podemos recoger el valor de todos los inputs de un formulario mediante el objeto FormData. 
-        // Para ello debemos pasar como parámetro el formulario al que queremos acceder. 
-        let formData = new FormData(form);
-        // Podemos añaadir un nuevo dato al objeto FormData mediante el método append.
-        formData.append("fingerprint", "123456789");
-
-        // Podemos recorrer el objeto FormData mediante un bucle for...of.
-        for (let pair of formData.entries()) {
-            console.log(pair[0]+ ', ' + pair[1]); 
-        }
         
     }else{
         
         alert("Debes ser mayor de edad para enviar el formulario");
     }
  
+});
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    // ver los datos enviados por el formulario en la consola en formato json
+    console.log(event);
 });
 

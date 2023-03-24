@@ -1,0 +1,11 @@
+.submenu{
+    height: 0;
+    min-height: 0;
+    overflow: hidden;
+    transition: min-height 0.5s;
+}
+
+.submenu.active{
+    height: max-content;
+    min-height: 2rem;
+}
