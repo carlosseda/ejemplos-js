@@ -5,8 +5,10 @@
 // escribir el nombre del módulo que queremos importar. Finalmennte utilizamos
 // "from" para indicar el nombre del archivo que contiene el módulo. 
 
+// Llamar a la función que tiene la opción default del módulo menu-button.js
+import './menu-button.js';
+
+// Llamar a la función que se llama renderTabs del módulo tabs.js
 import {renderTabs} from './tabs.js';
-import {renderMenuButton} from './menu-button.js';
 
 renderTabs();
-renderMenuButton();
