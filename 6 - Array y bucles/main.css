@@ -1,0 +1,15 @@
+.square {
+  background-color: hsl(0, 100%, 50%);
+  cursor: pointer;
+  height: 5rem;
+  left: 0;
+  margin-bottom: 1rem;
+  position: relative;
+  transition: left 2s ease-in-out;
+  width: 5rem;
+}
+
+.square.active {
+  background-color: hsl(246, 100%, 50%);
+  left: 50%;
+}

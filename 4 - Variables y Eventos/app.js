@@ -1,0 +1,2 @@
+import './square.js';
+
