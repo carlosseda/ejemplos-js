@@ -5,8 +5,8 @@ export default (() => {
   // en este caso "message". 
   document.addEventListener("message", (event => {
 
-    let notification = document.getElementById("notification");
-    let notificationText = document.getElementById("notification-message");
+    const notification = document.querySelector("#notification");
+    const notificationText = document.querySelector("#notification-message");
 
     // Podemos utilizar los parámetros que se han enviado en el evento, escribiendo event.detail y a continuación el nombre del parámetro.
     notificationText.innerHTML = event.detail.text;

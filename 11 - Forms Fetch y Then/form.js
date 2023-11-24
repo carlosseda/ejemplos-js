@@ -2,8 +2,8 @@ import { validateForm } from './validator.js';
 
 export default (() => {
 
-  let form = document.getElementById('form');
-  let sendFormButton = document.getElementById('send-form-button');
+  const form = document.querySelector('#form');
+  const sendFormButton = document.querySelector('#send-form-button');
 
   sendFormButton.addEventListener('click', event => {
 
