@@ -28,11 +28,12 @@ export default (() => {
 
   //En este caso la función recibe un parámetro llamado "name".
   function hello(name) {
-    alert("Hola " + name);
+    alert(`Hola ${name} encantado de conocerte`);
   }
 
   //En este caso la función se llama "validateAge" y recibe un parámetro llamado "age".
   let validateAge = age => {
+    
     if (age < 18) {
       // Algunas funciones pueden devolver un valor a quien las llama. Normalmente
       // esto se hace con la palabra reservada return. En este caso la función
@@ -48,10 +49,12 @@ export default (() => {
     // Para llamar a una función se usa el nombre de la función y entre paréntesis 
     // debemos escribir los parámetros que queramos enviar a la función si esta los acepta. En este caso
     // estamos llamando a la función "hello" y le estamos enviando el parámetro "Manuel". 
-    hello("Manuel");
+    hello("Carlos");
   });
 
-  sendButton.addEventListener("click", () => {
+  sendButton.addEventListener("click", (event) => {
+
+    event.preventDefault();
 
     // En este caso almacenamos en la variable "validation" el resultado de la función "validateAge" 
     // que recibe como parámetro el valor del input "age". Si el valor

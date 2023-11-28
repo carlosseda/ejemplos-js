@@ -3,6 +3,8 @@ export default (() => {
   const age = document.querySelector("#age");
   const showAge = document.querySelector("#show-age");
   const plusAge = document.querySelector("#plus-age");
+  const minusAge = document.querySelector("#minus-age");
+
 
   showAge.addEventListener("click", () => {
 
@@ -79,9 +81,22 @@ export default (() => {
     } else {
       alert("No tengo idea de qué es lo que has escrito");
     }
+
+    // Lo mismo pero con switch. En este caso, la condición es el valor de la variable "age".
+
+    switch (age.value) {
+      case "18":
+        alert("Bienvenido a la web");
+        break;
+      case "17":
+        alert("Lo siento, eres demasiado pequeño para ver esta web");
+        break;
+      default:
+        alert("No tengo idea de qué es lo que has escrito");
+    }
   });
 
-  plusAge.addEventListener("click", () => {
+  plusAge?.addEventListener("click", () => {
 
     // Los datos cuando programamos pueden ser de diferentes tipos, por ejemplo
     // un string (texto), un number (números), un boolean (un 1 o un 0),
@@ -113,6 +128,13 @@ export default (() => {
     // "age", escribiendo después del igual el nuevo valor que queramos que tenga.
 
     age.value = (parseInt(age.value) + 1);
+
   });
-  
+
+  minusAge?.addEventListener("click", () => {
+
+    if(age.value > 1) {
+      age.value = (parseInt(age.value) - 1);
+    }
+  });
 })();
