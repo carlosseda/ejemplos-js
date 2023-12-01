@@ -14,7 +14,7 @@ export default (() => {
   // array, y entre corchetes el índice del elemento que queremos acceder. Por ejemplo,
   // squares[0] accede al primer elemento del array squares.
 
-  console.log(squares[0]);
+  console.log(squares.length);
 
   // Para recorrer todos los elementos del indice de un array necesitamos utilizar un bucle. 
   // Un bucle es una estructura de control que nos permite ejecutar un código varias veces.
@@ -38,9 +38,9 @@ export default (() => {
   // Y el tercero es el incremento o decremento de la variable en cada iteración del bucle.
 
   // for(let i = 0; i < squares.length; i++){
-  //     squares[i].addEventListener("click", (event) => {
-  //         console.log(squares[i].dataset.number);
-  //     });
+  //   squares[i].addEventListener("click", (event) => {
+  //     console.log(squares[i].dataset.number);
+  //   });
   // }
 
   // También podemos recorrer un array utilizando un bucle for...of. Este bucle recorre todos los
@@ -48,9 +48,9 @@ export default (() => {
   // del array que se está recorriendo en ese momento.
 
   // for( let square of squares){
-  //     square.addEventListener("click", (event) => {
-  //         console.log(square.dataset.number);
-  //     });
+  //   square.addEventListener("click", (event) => {
+  //       console.log(square.dataset.number);
+  //   });
   // }
 
   // También podemos recorrer un array utilizando un bucle while. Este bucle recibe como parámetro

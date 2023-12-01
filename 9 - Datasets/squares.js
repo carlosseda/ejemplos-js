@@ -17,7 +17,7 @@ export default (() => {
       // console.log(square.getAttribute("data-color")) o square.dataset.color siendo este último
       // preferible.
 
-      console.log(square.dataset.color);
+      console.log(square.dataset.info);
 
       square.classList.add("active");
 
