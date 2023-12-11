@@ -10,6 +10,8 @@ class Crud extends HTMLElement {
   }
 
   render () {
+    
+    // Un slot es un espacio para insertar HTML en el componente
 
     this.shadow.innerHTML =
     /*html*/`
@@ -31,7 +33,6 @@ class Crud extends HTMLElement {
   
     <div class="crud">
       <div class="table-section">
-        // Un slot es un espacio para insertar HTML en el componente
         <slot name="table"></slot>
       </div>
       <div class="form-section">
