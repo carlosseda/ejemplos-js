@@ -28,6 +28,8 @@ class Title extends HTMLElement {
     // un componente puede tener atributos, los atributos son como propiedades del componente
     // los atributos se definen en el HTML del componente
     this.title = this.getAttribute('title')
+    this.color = this.getAttribute('color')
+    this.message = this.getAttribute('message')
   }
 
   // El método connectedCallback se ejecuta cuando el componente se renderiza en el DOM
@@ -39,9 +41,10 @@ class Title extends HTMLElement {
   render () {
     // El shadowRoot tiene el método innerHTML para insertar HTML en el shadowRoot
     this.shadow.innerHTML =
-    `
+    /*html*/`
     <style>
       h1{
+        color: ${this.color};
         cursor: pointer;
         font-family: 'Poppins', sans-serif;
         margin: 0;
@@ -52,7 +55,6 @@ class Title extends HTMLElement {
       <h1>${this.title}</h1>
     </div>
     `
-
     // Para usar el método querySelector ahora se debe usar el shadowRoot
     this.shadow.querySelector('.title').addEventListener('click', () => {
       this.alertMessage()
@@ -60,7 +62,7 @@ class Title extends HTMLElement {
   }
 
   alertMessage () {
-    alert('Hello World')
+    alert(this.message)
   }
 }
 
