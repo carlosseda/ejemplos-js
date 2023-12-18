@@ -5,7 +5,7 @@
 // console.log(number.toFixed(2));
 
 // toPrecision() -> devuelve el número con el número de dígitos indicado
-// let number = 3.14159265359;
+// let number = "3.14159265359";
 // console.log(number.toPrecision(2));
 
 // toString() -> devuelve el número en formato string
@@ -21,7 +21,7 @@
 // console.log(Number.isInteger(number));
 
 // Comprobamos si un número es NaN
-// let number = 3.14159265359;
+// let number = NaN;
 // console.log(Number.isNaN(number));
 
 // redondear un número
@@ -43,8 +43,13 @@
 // devuelve un número aleatorio entre 0 y el número indicado
 // console.log(Math.floor(Math.random() * 100)); 
 
+// toLocateString() -> devuelve el número con el formato de la localización (idioma, moneda, etc)
 
+// let number = 123456789.12345;
 
+// console.log(number.toLocaleString("es-ES", {style: "currency", currency: "EUR"}));
 
+// Usa la moneda de inglaterra
 
+// console.log(number.toLocaleString("en-GB", {style: "currency", currency: "GBP"}));
 

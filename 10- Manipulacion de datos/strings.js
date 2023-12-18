@@ -60,7 +60,6 @@
 // let sentence = "Hola, soy una frase, soy otra cosa";
 // console.log(sentence.replaceAll("soy", "no soy"));
 
-
 // localeCompare() -> compara dos strings y devuelve un número (1, 0, -1)
 // si el string es mayor que el parámetro devuelve 1, entendiendo por mayor que tiene más caracteres
 // si el string es igual que el parámetro devuelve 0
@@ -85,7 +84,7 @@
 // el $ indica que la búsqueda se detenga en el último carácter
 // let name = "Juan Carlos";
 // let regex = /^[a-zA-Z\s]+$/g;
-// console.log(name.match(regex));
+// let validation = name.match(regex);
 
 // Comprobar si hay números en el string
 // /\d/ -> busca cualquier número
@@ -181,12 +180,12 @@
 
 // Comprobar si es un número de IBAN
 // /^ES\d{22}$/ -> busca ES seguido de 22 números
-let iban = "ES 12 3456 7890 123456789012";
-iban = iban.replace(/\s/g, "");
-console.log(iban);
-let regex = /^ES\d{22}$/g;
+// let iban = "ES 12 3456 7890 123456789012";
+// iban = iban.replace(/\s/g, "");
+// console.log(iban);
+// let regex = /^ES\d{22}$/g;
 
-console.log(iban.match(regex));
+// console.log(iban.match(regex));
 
 
 
