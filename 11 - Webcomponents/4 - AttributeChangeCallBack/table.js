@@ -5,7 +5,7 @@ class Table extends HTMLElement {
     this.shadow = this.attachShadow({ mode: 'open' })
     this.data = []
 
-    document.addEventListener('changeUrl', this.changeUrl.bind(this))
+    document.addEventListener('changeUrl', this.handleChangeUrl.bind(this))
   }
 
   // Podemos definir los atributos que queremos observar, si cambian de valor, se ejecuta el attributeChangedCallback
@@ -27,7 +27,7 @@ class Table extends HTMLElement {
     }
   }
 
-  changeUrl (event) {
+  handleChangeUrl (event) {
     this.setAttribute('url', event.detail.url)
   }
 

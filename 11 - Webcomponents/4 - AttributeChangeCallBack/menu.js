@@ -45,7 +45,7 @@ class Menu extends HTMLElement {
   
     <section class="menu">
       <ul>
-        ${this.data.map(item => `<li data-url="${item.url}">${item.title}</li>`).join('')}
+        ${this.data.map(item =>`<li data-url="${item.url}">${item.title}</li>`).join('')}
       </ul>
     </section>
     `
