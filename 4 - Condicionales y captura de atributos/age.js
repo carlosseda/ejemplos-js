@@ -74,26 +74,36 @@ export default (() => {
     // entre parentesis una segunda condición, por último si queremos que si no se 
     // cumple ninguna condición se ejecute a su vez algo podemos utilizar else. 
 
-    if (age.value < 18) {
-      alert("Lo siento, eres demasiado pequeño para ver esta web");
-    } else if (age.value >= 18) {
-      alert("Bienvenido a la web");
-    } else {
-      alert("No tengo idea de qué es lo que has escrito");
-    }
+    // if (age.value < 18) {
+    //   alert("Lo siento, eres demasiado pequeño para ver esta web");
+    // } else if (age.value >= 18) {
+    //   alert("Bienvenido a la web");
+    // } else {
+    //   alert("No tengo idea de qué es lo que has escrito");
+    // }
+
+    // Podemos hacer lo mismo pero con un operador ternario. Un operador ternario es una forma
+    // de escribir un condicional en una sola línea. La estructura de un operador ternario es:
+    // condición ? valor si verdadero : valor si falso
+
+    // En el siguiente caso tenemos que si el valor de la variable "age" es menor que 18,
+    // entonces se ejecutará el código que está después del signo de interrogación, y si no,
+    // se ejecutará el código que está después de los dos puntos.
+
+    const message = age.value < 18 ?? false;
 
     // Lo mismo pero con switch. En este caso, la condición es el valor de la variable "age".
 
-    switch (age.value) {
-      case "18":
-        alert("Bienvenido a la web");
-        break;
-      case "17":
-        alert("Lo siento, eres demasiado pequeño para ver esta web");
-        break;
-      default:
-        alert("No tengo idea de qué es lo que has escrito");
-    }
+    // switch (age.value) {
+    //   case "18":
+    //     alert("Bienvenido a la web");
+    //     break;
+    //   case "17":
+    //     alert("Lo siento, eres demasiado pequeño para ver esta web");
+    //     break;
+    //   default:
+    //     alert("No tengo idea de qué es lo que has escrito");
+    // }
   });
 
   plusAge?.addEventListener("click", () => {

@@ -3,7 +3,6 @@
 // estamos exportando la función por defecto, le tenemos que poner un nombre a la función.
 
 export const renderTabs = () => {
-
   // Aquí añadimos el código de nuestra función
 }
 

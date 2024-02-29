@@ -12,7 +12,13 @@ export default (() => {
     },
     body: JSON.stringify(login)
   }).then(response => {
-    return response.json();
+    if (response.status === 500 || response.status === 422) {
+      throw response.json()
+    }
+
+    if (response.status === 200) { 
+      return response.json();
+    }
   }).then(data => {
     sessionStorage.setItem('accessToken', data.accessToken);
   }).catch(error => {

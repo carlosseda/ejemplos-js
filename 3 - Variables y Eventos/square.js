@@ -50,7 +50,6 @@ export default (() => {
   // square se ejecutará la función que hemos escrito entre las llaves.
 
   square.addEventListener("click", () => {
-
     // En la siguiente línea estamos haciendo referencia al elemento HTML, accediendo
     // a su lista de clases, y añadiendo o quitando la clase "active" al elemento mediante
     // la función toggle. Si el elemento no tiene la clase "active", entonces se la añade.

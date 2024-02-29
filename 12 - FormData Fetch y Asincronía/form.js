@@ -31,14 +31,14 @@ export default (() => {
     let formData = new FormData(form);
     let formDataJson = Object.fromEntries(formData.entries());
 
-    fetch('http://192.168.1.16:8080/api/admin/users', {
+    fetch('http://127.0.0.1:8080/api/admin/faqs', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
-        'x-access-token': sessionStorage.getItem('accessToken')
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify(formDataJson)
     }).then(response => {
+      console.log(response.status)
       return response.json();
     }).then(data => {
 

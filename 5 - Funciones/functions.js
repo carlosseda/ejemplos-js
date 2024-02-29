@@ -20,12 +20,11 @@ export default (() => {
   // En este caso la función se llama "hello".
 
   //2.1 O en su versión más moderna, con una variable que tenga como valor una función anónima. 
-  // Por ejemplo: let hello = () => {}.
+  // Por ejemplo: let hello = name => {}
 
   //Una función puede tener parámetros que son las palabras que van dentro de los paréntesis. 
   //Un parámetro es una variable local que sólo existe dentro de la función. Y que se le puede
   //dar valor cuando se llama a la función.
-
   //En este caso la función recibe un parámetro llamado "name".
   function hello(name) {
     alert(`Hola ${name} encantado de conocerte`);
@@ -49,7 +48,7 @@ export default (() => {
     // Para llamar a una función se usa el nombre de la función y entre paréntesis 
     // debemos escribir los parámetros que queramos enviar a la función si esta los acepta. En este caso
     // estamos llamando a la función "hello" y le estamos enviando el parámetro "Manuel". 
-    hello("Carlos");
+    hello("Lucas");
   });
 
   sendButton.addEventListener("click", (event) => {
