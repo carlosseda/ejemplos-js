@@ -9,8 +9,12 @@ export default (() => {
 
     event.preventDefault();
 
+    for(let element of form.elements){
+      console.log(element.dataset.validate)
+    };
+
     if(!validateForm(form.elements)){
-        return;
+      return;
     }
 
     // Podemos recoger el valor de todos los inputs de un formulario mediante el objeto FormData. 

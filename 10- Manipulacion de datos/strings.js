@@ -75,7 +75,7 @@
 
 // Comprobar si una palabra está en un string
 // /leyes/g -> busca la palabra "leyes fundamentales" de forma global, es decir, que no se detenga en la primera coincidencia
-// let text = "En la Constitución Española de 1978 se recogen las leyes fundamentales de España";
+// let text = "En la Constitución Española de 1978 se recogen las leyes fundamentales de España,";
 // let regex = /leyes fundamentales/g;
 // console.log(text.match(regex));
 

@@ -1,6 +1,8 @@
 {
   "dependencies": {
-    "@ckeditor/ckeditor5-build-classic": "^34.0.0"
+    "@ckeditor/ckeditor5-build-classic": "^34.0.0",
+    "gpt-tokenizer": "^2.1.2",
+    "openai": "^4.29.0"
   },
   "devDependencies": {
     "webpack": "^5.72.0",

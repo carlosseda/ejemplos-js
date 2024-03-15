@@ -24,13 +24,13 @@ export default (() => {
   // elementos del array squares, y en cada iteración del bucle la variable square hace referencia
   // al elemento del array que se está recorriendo en ese momento.
 
-  squares.forEach(square => {
+  // squares.forEach(square => {
 
-    square.addEventListener("click", () => {
+  //   square.addEventListener("click", () => {
 
-      square.classList.toggle("active");
-    });
-  });
+  //     square.classList.toggle("active");
+  //   });
+  // });
 
   // También podemos recorrer un array utilizando un bucle for. Este bucle recibe tres parámetros:
   // el primero es la variable que va a ir aumentando o disminuyendo en cada iteración del bucle.
@@ -57,13 +57,13 @@ export default (() => {
   // la condición que se tiene que cumplir para que el bucle se siga ejecutando. En cada iteración
   // del bucle la variable i hace referencia al número de iteración del bucle.
 
-  // let i = 0;
-  // while(i < squares.length){
-  //     squares[i].addEventListener("click", (event) => {
-  //         console.log(squares[i].dataset.number);
-  //     });
-  //     i++;
-  // }
+  let i = 0;
+  while(i < squares.length){
+      squares[i].addEventListener("click", (event) => {
+          console.log(squares[i].dataset.number);
+      });
+      i++;
+  }
 
   // El más recomendable es forEach, ya que es el más fácil de usar y el que menos errores puede	
   // provocar. Por eso mismo, siempre que sea posible, utilizaremos forEach para recorrer arrays.

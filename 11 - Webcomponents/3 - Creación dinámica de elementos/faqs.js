@@ -4,7 +4,16 @@ class Faqs extends HTMLElement {
     super()
     this.shadow = this.attachShadow({ mode: 'open' })
 
-    this.faqs = [
+    this.data = []
+  }
+
+  async connectedCallback () {
+    await this.loadData()
+    await this.render()
+  }
+
+  loadData () {
+    this.data = [
       {
         "question": "¿Qué es un webcomponent?",
         "answer": "Es un componente que puedes usar en cualquier web"
@@ -18,10 +27,6 @@ class Faqs extends HTMLElement {
         "answer": "Es un fragmento de html"
       }
     ]
-  }
-
-  connectedCallback () {
-    this.render()
   }
 
   render () {
@@ -56,19 +61,18 @@ class Faqs extends HTMLElement {
     </style>
   
     <div class="faqs">
-      
     </div>
     `
 
     // Podemos crear elementos html desde cero con javascript y añadirlos al shadow dom 
     // con appendChild
 
-    this.faqs.forEach(faq => {
+    this.data.forEach(faq => {
 
       const faqsContainer = this.shadow.querySelector('.faqs')
       const faqContainer = document.createElement('div')
       faqContainer.classList.add('faq')
-
+      
       const question = document.createElement('h2')
       question.textContent = faq.question
       faqContainer.appendChild(question)
@@ -78,7 +82,6 @@ class Faqs extends HTMLElement {
       faqContainer.appendChild(answer)
 
       faqsContainer.appendChild(faqContainer)
-      
     })
   }
 }
