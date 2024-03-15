@@ -125,33 +125,6 @@
   }else{
     const targetData  = JSON.parse(fs.readFileSync('openAIresponse.json', 'utf-8'));
 
-    for (let association of targetData) {
-      if(association.address){
-        const street = association.address.replace(/ /g, '+')
-
-        const geoposition = await fetch(`https://ideib.caib.es/geoserveis/rest/services/public/GOIB_Adreces_IB/GeocodeServer/findAddressCandidates?SingleKey=&Single+Line+Input=${street}&f=pjson`)
-        const geopositionData = await geoposition.json();
-
-        if(geopositionData.candidates.length > 0){
-          const localation = geopositionData.candidates[0].location;
-        }else{
-          console.log('No se ha encontrado la dirección: ' + street);
-        }
-      }
-    }
-
-    // const geoposition = await fetch('https://ideib.caib.es/geoserveis/rest/services/public/GOIB_Adreces_IB/GeocodeServer/findAddressCandidates?SingleKey=&Single+Line+Input=Ramon+Berenguer+III&f=pjson')
-    // const geopositionData = await geoposition.json();
-    // const localation = geopositionData.candidates[0].location;
-
-    // const utmProjection = '+proj=utm +zone=31N +datum=WGS84 +units=m +no_defs';
-    // const latLongProjection = '+proj=longlat +datum=WGS84 +no_defs';
-    
-    // const x = localation.x
-    // const y = localation.y
-    
-    // const [longitude, latitude] = proj4(utmProjection, latLongProjection, [x, y]);
-
-    // console.log(latitude , longitude);
+    console.log(targetData);
   }
 })();
