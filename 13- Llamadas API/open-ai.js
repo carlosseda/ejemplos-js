@@ -1,24 +1,26 @@
-const { OpenAI } = require('openai')
-const { encode } = require('gpt-tokenizer')
-
 (async () => {
+  require('dotenv').config()
+  const { OpenAI } = require('openai')
+  const { encode } = require('gpt-tokenizer')
+  const fs = require('fs')
 
   const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
+    apiKey: process.env.OpenAI_API_KEY,
   })
 
   try {
     let result = await openai.chat.completions.create({
-      model: "gpt-3.5-turbo-1106",
+      model: "gpt-3.5-turbo",
       response_format: { type: "json_object" },
       messages: [
         {
           "role": "system",
-          "content": ""
+          "content": "Eres un detector de nombres de autores, analiza el texto y extrae solo los nombres de aquellos que hayan hablado del COVID-19. Genera un json como este:" +
+          "{authors: []}"
         },
         {
           "role": "user",
-          "content": ``
+          "content": text
         }
       ],
       temperature: 0.7,
@@ -28,10 +30,8 @@ const { encode } = require('gpt-tokenizer')
       presence_penalty: 0,
     })
       
-    response = JSON.parse(result.choices[0].message.content)
-
-    console.log(response)
-      
+    const response = JSON.parse(result.choices[0].message.content)
+    fs.writeFileSync('openai.json', JSON.stringify(response, null, 2))      
   } catch (e) {
     console.log(e)
   }

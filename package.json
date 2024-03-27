@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^34.0.0",
+    "@google-cloud/language": "^6.2.0",
     "@googlemaps/js-api-loader": "^1.16.6",
     "dotenv": "^16.4.5",
     "gpt-tokenizer": "^2.1.2",
