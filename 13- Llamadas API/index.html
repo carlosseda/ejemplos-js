@@ -10,509 +10,3492 @@
   <canvas id="myChart" width="400" height="200"></canvas>
   <script>
     const data = {
-      "1990": [
-        0,
-        2.6999999999999993,
-        -0.6999999999999993,
-        0.40000000000000036,
-        4.5,
-        3.6999999999999993,
-        2.1000000000000014,
-        1,
-        -1,
-        -4.400000000000002,
-        -5.5,
-        -3.8999999999999986
-      ],
-      "1991": [
-        0,
-        -0.5,
-        2.700000000000001,
-        0,
-        2.299999999999999,
-        5.300000000000001,
-        3.8999999999999986,
-        0.8000000000000007,
-        -1.3999999999999986,
-        -6.400000000000002,
-        -3.1999999999999993,
-        -2.6999999999999993
-      ],
-      "1992": [
-        0,
-        0.40000000000000036,
-        2,
-        1.6999999999999993,
-        4,
-        1.1999999999999993,
-        4.199999999999999,
-        2.200000000000003,
-        -2.8000000000000007,
-        -4.900000000000002,
-        -2.6999999999999993,
-        -3.0999999999999996
-      ],
-      "1993": [
-        0,
-        0.3000000000000007,
-        1.299999999999999,
-        2.3000000000000007,
-        4.1,
-        4.100000000000001,
-        1.5999999999999979,
-        1.5,
-        -3.599999999999998,
-        -4.600000000000001,
-        -3.3000000000000007,
-        -1.5
-      ],
-      "1994": [
-        0,
-        0.3999999999999986,
-        2.3000000000000007,
-        0.5,
-        4.699999999999999,
-        3,
-        4.100000000000001,
-        1.0999999999999979,
-        -4.699999999999999,
-        -3.3999999999999986,
-        -2.6000000000000014,
-        -3.299999999999999
-      ],
-      "1995": [
-        0,
-        2.0999999999999996,
-        -0.8999999999999986,
-        2.0999999999999996,
-        3.9999999999999982,
-        2.6000000000000014,
-        4,
-        0.3000000000000007,
-        -4,
-        -1.3000000000000007,
-        -3.8000000000000007,
-        -2.0999999999999996
-      ],
-      "1996": [
-        0,
-        -2.5999999999999996,
-        1.200000000000001,
-        3.0999999999999996,
-        2.5999999999999996,
-        4.199999999999999,
-        2.400000000000002,
-        0.7999999999999972,
-        -4.399999999999999,
-        -3,
-        -2,
-        -2.8000000000000007
-      ],
-      "1997": [
-        0,
-        0.5,
-        1.0999999999999996,
-        1.799999999999999,
-        3.900000000000002,
-        2.8999999999999986,
-        2,
-        1.3000000000000007,
-        -1.6999999999999993,
-        -3.1000000000000014,
-        -4.800000000000001,
-        -3
-      ],
-      "1998": [
-        0,
-        -0.40000000000000036,
-        1.3000000000000007,
-        1.8999999999999986,
-        2.900000000000002,
-        4.099999999999998,
-        2.6999999999999993,
-        0.6000000000000014,
-        -2.1000000000000014,
-        -5.399999999999999,
-        -4.4,
-        -2.0999999999999996
-      ],
-      "1999": [
-        0,
-        -0.6999999999999993,
-        3,
-        1.799999999999999,
-        4.600000000000001,
-        2.6999999999999993,
-        2.5,
-        1.5,
-        -2.8000000000000007,
-        -3.3999999999999986,
-        -7.100000000000001,
-        -1.1999999999999993
-      ],
-      "2000": [
-        0,
-        2.4000000000000004,
-        1,
-        2.3000000000000007,
-        4.099999999999998,
-        2.5,
-        2.1999999999999993,
-        1.4000000000000021,
-        -3,
-        -4,
-        -4.200000000000001,
-        -1.5
-      ],
-      "2001": [
-        0,
-        -1,
-        4.299999999999999,
-        -0.09999999999999787,
-        2.799999999999997,
-        4.800000000000001,
-        1.9000000000000021,
-        1.3999999999999986,
-        -4.199999999999999,
-        -0.40000000000000213,
-        -7.599999999999998,
-        -3.1000000000000014
-      ],
-      "2002": [
-        0,
-        0.3999999999999986,
-        1.9000000000000004,
-        1.0999999999999996,
-        2.6000000000000014,
-        5.800000000000001,
-        1,
-        -0.10000000000000142,
-        -1.6000000000000014,
-        -3.099999999999998,
-        -3.900000000000002,
-        -1.9999999999999982
-      ],
-      "2003": [
-        0,
-        -1,
-        2.5,
-        2.3000000000000007,
-        3.5999999999999996,
-        6.699999999999999,
-        1.6000000000000014,
-        1.5999999999999979,
-        -5.599999999999998,
-        -3.6000000000000014,
-        -3.599999999999998,
-        -3.5000000000000018
-      ],
-      "2004": [
-        0,
-        -0.7999999999999989,
-        1.0999999999999996,
-        2.0999999999999996,
-        2.3999999999999986,
-        5.700000000000003,
-        2.3999999999999986,
-        1.3000000000000007,
-        -1.6999999999999993,
-        -3.1000000000000014,
-        -7.5,
-        -1.0999999999999996
-      ],
-      "2005": [
-        0,
-        -1,
-        3.0999999999999996,
-        3.200000000000001,
-        4.300000000000001,
-        4.5,
-        1.8999999999999986,
-        -0.8000000000000007,
-        -2.6999999999999993,
-        -2.1999999999999993,
-        -5.300000000000001,
-        -4
-      ],
-      "2006": [
-        0,
-        0.09999999999999964,
-        2.5,
-        3.5000000000000018,
-        3.099999999999998,
-        3.900000000000002,
-        3.1999999999999993,
-        -1.6000000000000014,
-        -1.8999999999999986,
-        -1.6999999999999993,
-        -4.100000000000001,
-        -4.4
-      ],
-      "2007": [
-        0,
-        1.3000000000000007,
-        -0.5999999999999996,
-        3.4999999999999982,
-        3.6000000000000014,
-        2.8000000000000007,
-        2.099999999999998,
-        0.20000000000000284,
-        -2.5,
-        -3.6000000000000014,
-        -4.699999999999999,
-        -1.9000000000000004
-      ],
-      "2008": [
-        0,
-        -0.09999999999999964,
-        0.7999999999999989,
-        2.3000000000000007,
-        2.5,
-        3.8999999999999986,
-        3.200000000000003,
-        0.3999999999999986,
-        -2.5,
-        -3.5,
-        -5.6,
-        -2.700000000000001
-      ],
-      "2009": [
-        0,
-        0.09999999999999964,
-        1.3000000000000007,
-        2.1999999999999993,
-        5.300000000000001,
-        3.1999999999999993,
-        3,
-        0.3000000000000007,
-        -3.5,
-        -3.400000000000002,
-        -3.1999999999999993,
-        -3.5
-      ],
-      "2010": [
-        0,
-        0.5,
-        0.5,
-        3,
-        2.599999999999998,
-        3.700000000000003,
-        4.599999999999998,
-        -0.3999999999999986,
-        -2.5,
-        -4.100000000000001,
-        -4.199999999999999,
-        -2.9000000000000004
-      ],
-      "2011": [
-        0,
-        0.9000000000000004,
-        1.1999999999999993,
-        4.199999999999999,
-        2.6000000000000014,
-        2.099999999999998,
-        2.6000000000000014,
-        1.3000000000000007,
-        -1.8000000000000007,
-        -3.8000000000000007,
-        -3.3999999999999986,
-        -3.4000000000000004
-      ],
-      "2012": [
-        0,
-        -3.0999999999999996,
-        4.9,
-        2.0999999999999996,
-        3.8000000000000007,
-        5.099999999999998,
-        1,
-        2.1000000000000014,
-        -4.300000000000001,
-        -2.599999999999998,
-        -4.200000000000003,
-        -2.9999999999999982
-      ],
-      "2013": [
-        0,
-        -1.1999999999999993,
-        3.6999999999999993,
-        1,
-        1.799999999999999,
-        4,
-        4.300000000000001,
-        0.1999999999999993,
-        -2.099999999999998,
-        -1.8000000000000007,
-        -7.5,
-        -1.8000000000000007
-      ],
-      "2014": [
-        0,
-        -0.09999999999999964,
-        1,
-        3.5000000000000018,
-        1.5,
-        4.899999999999999,
-        1.6999999999999993,
-        0.8000000000000007,
-        -0.6000000000000014,
-        -3.1999999999999993,
-        -4.300000000000001,
-        -5.099999999999998
-      ],
-      "2015": [
-        0,
-        -0.7999999999999989,
-        2.5999999999999996,
-        2.9999999999999982,
-        4,
-        3.8000000000000007,
-        4.100000000000001,
-        -1.4000000000000021,
-        -3.299999999999997,
-        -3,
-        -4.100000000000001,
-        -1.5
-      ],
-      "2016": [
-        0,
-        -0.6000000000000014,
-        0.10000000000000142,
-        2.8000000000000007,
-        2.299999999999997,
-        4.700000000000003,
-        2.799999999999997,
-        -0.5,
-        -1.3999999999999986,
-        -2.8999999999999986,
-        -4.5,
-        -2.3000000000000007
-      ],
-      "2017": [
-        0,
-        2.6999999999999993,
-        1,
-        1,
-        4.399999999999999,
-        4.5,
-        2,
-        1,
-        -4.699999999999999,
-        -2.3000000000000007,
-        -5.499999999999998,
-        -2.3000000000000007
-      ],
-      "2018": [
-        0,
-        -3.5999999999999996,
-        3.5,
-        3.3999999999999986,
-        1.5,
-        4.800000000000001,
-        3.3000000000000007,
-        1,
-        -2.1999999999999993,
-        -5.100000000000001,
-        -4.300000000000001,
-        -2
-      ],
-      "2019": [
-        0,
-        1.1999999999999993,
-        1.200000000000001,
-        1.6999999999999993,
-        2.700000000000001,
-        5.199999999999999,
-        4.399999999999999,
-        -0.7999999999999972,
-        -2.200000000000003,
-        -3.599999999999998,
-        -5.9,
-        -0.40000000000000036
-      ],
-      "2020": [
-        0,
-        1.200000000000001,
-        0.5999999999999996,
-        2.4000000000000004,
-        3.8000000000000007,
-        2.099999999999998,
-        4,
-        0,
-        -3.099999999999998,
-        -4.800000000000001,
-        -1.6000000000000014,
-        -3.8999999999999986
-      ],
-      "2021": [
-        0,
-        2.3000000000000007,
-        -0.10000000000000142,
-        1.4000000000000004,
-        3.700000000000001,
-        5.199999999999999,
-        2.3000000000000007,
-        0.8999999999999986,
-        -1.6999999999999993,
-        -5.300000000000001,
-        -5.299999999999999,
-        -1.5
-      ],
-      "2022": [
-        0,
-        1.6000000000000014,
-        1.0999999999999996,
-        1.700000000000001,
-        5.099999999999998,
-        4.5,
-        2.900000000000002,
-        0.3999999999999986,
-        -2.8999999999999986,
-        -2.700000000000003,
-        -4.699999999999999,
-        -2.799999999999999
-      ],
-      "2023": [
-        0,
-        -0.8000000000000007,
-        4,
-        1.5,
-        2.900000000000002,
-        4.799999999999997,
-        3.8000000000000007,
-        -1,
-        -2.3000000000000007,
-        -2.3999999999999986,
-        -5,
-        -2.8000000000000007
-      ]
-    };
+  "1978": [
+    {
+      "month": "1",
+      "media": "10.1",
+      "precipitation": "74.2",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "13.1",
+      "precipitation": "18.6",
+      "variation": "3.00"
+    },
+    {
+      "month": "3",
+      "media": "12.9",
+      "precipitation": "45.7",
+      "variation": "-0.20"
+    },
+    {
+      "month": "4",
+      "media": "14.0",
+      "precipitation": "119.2",
+      "variation": "1.10"
+    },
+    {
+      "month": "5",
+      "media": "17.0",
+      "precipitation": "72.6",
+      "variation": "3.00"
+    },
+    {
+      "month": "6",
+      "media": "20.6",
+      "precipitation": "7.2",
+      "variation": "3.60"
+    },
+    {
+      "month": "7",
+      "media": "23.0",
+      "precipitation": "4.1",
+      "variation": "2.40"
+    },
+    {
+      "month": "8",
+      "media": "24.6",
+      "precipitation": "0.4",
+      "variation": "1.60"
+    },
+    {
+      "month": "9",
+      "media": "23.3",
+      "precipitation": "12.4",
+      "variation": "-1.30"
+    },
+    {
+      "month": "10",
+      "media": "18.2",
+      "precipitation": "37.2",
+      "variation": "-5.10"
+    },
+    {
+      "month": "11",
+      "media": "14.7",
+      "precipitation": "83.0",
+      "variation": "-3.50"
+    },
+    {
+      "month": "12",
+      "media": "14.3",
+      "precipitation": "29.5",
+      "variation": "-0.40"
+    }
+  ],
+  "1979": [
+    {
+      "month": "1",
+      "media": "12.5",
+      "precipitation": "42.3",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "12.6",
+      "precipitation": "42.7",
+      "variation": "0.10"
+    },
+    {
+      "month": "3",
+      "media": "12.4",
+      "precipitation": "25.2",
+      "variation": "-0.20"
+    },
+    {
+      "month": "4",
+      "media": "13.6",
+      "precipitation": "22.0",
+      "variation": "1.20"
+    },
+    {
+      "month": "5",
+      "media": "17.5",
+      "precipitation": "0.3",
+      "variation": "3.90"
+    },
+    {
+      "month": "6",
+      "media": "22.4",
+      "precipitation": "0.3",
+      "variation": "4.90"
+    },
+    {
+      "month": "7",
+      "media": "24.0",
+      "precipitation": "26.1",
+      "variation": "1.60"
+    },
+    {
+      "month": "8",
+      "media": "24.6",
+      "precipitation": "6.0",
+      "variation": "0.60"
+    },
+    {
+      "month": "9",
+      "media": "21.8",
+      "precipitation": "53.4",
+      "variation": "-2.80"
+    },
+    {
+      "month": "10",
+      "media": "18.6",
+      "precipitation": "142.5",
+      "variation": "-3.20"
+    },
+    {
+      "month": "11",
+      "media": "13.2",
+      "precipitation": "31.7",
+      "variation": "-5.40"
+    },
+    {
+      "month": "12",
+      "media": "12.4",
+      "precipitation": "42.6",
+      "variation": "-0.80"
+    }
+  ],
+  "1980": [
+    {
+      "month": "1",
+      "media": "11.2",
+      "precipitation": "59.2",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "12.2",
+      "precipitation": "22.7",
+      "variation": "1.00"
+    },
+    {
+      "month": "3",
+      "media": "13.3",
+      "precipitation": "19.1",
+      "variation": "1.10"
+    },
+    {
+      "month": "4",
+      "media": "13.1",
+      "precipitation": "56.7",
+      "variation": "-0.20"
+    },
+    {
+      "month": "5",
+      "media": "16.8",
+      "precipitation": "64.1",
+      "variation": "3.70"
+    },
+    {
+      "month": "6",
+      "media": "20.8",
+      "precipitation": "9.9",
+      "variation": "4.00"
+    },
+    {
+      "month": "7",
+      "media": "22.3",
+      "precipitation": "1.7",
+      "variation": "1.50"
+    },
+    {
+      "month": "8",
+      "media": "25.1",
+      "precipitation": "16.7",
+      "variation": "2.80"
+    },
+    {
+      "month": "9",
+      "media": "23.3",
+      "precipitation": "11.1",
+      "variation": "-1.80"
+    },
+    {
+      "month": "10",
+      "media": "18.6",
+      "precipitation": "23.1",
+      "variation": "-4.70"
+    },
+    {
+      "month": "11",
+      "media": "14.9",
+      "precipitation": "73.9",
+      "variation": "-3.70"
+    },
+    {
+      "month": "12",
+      "media": "10.3",
+      "precipitation": "39.7",
+      "variation": "-4.60"
+    }
+  ],
+  "1981": [
+    {
+      "month": "1",
+      "media": "10.5",
+      "precipitation": "37.4",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "9.8",
+      "precipitation": "31.0",
+      "variation": "-0.70"
+    },
+    {
+      "month": "3",
+      "media": "13.9",
+      "precipitation": "4.4",
+      "variation": "4.10"
+    },
+    {
+      "month": "4",
+      "media": "14.7",
+      "precipitation": "151.7",
+      "variation": "0.80"
+    },
+    {
+      "month": "5",
+      "media": "17.7",
+      "precipitation": "4.2",
+      "variation": "3.00"
+    },
+    {
+      "month": "6",
+      "media": "21.8",
+      "precipitation": "11.4",
+      "variation": "4.10"
+    },
+    {
+      "month": "7",
+      "media": "23.1",
+      "precipitation": "8.5",
+      "variation": "1.30"
+    },
+    {
+      "month": "8",
+      "media": "24.4",
+      "precipitation": "0.2",
+      "variation": "1.30"
+    },
+    {
+      "month": "9",
+      "media": "22.9",
+      "precipitation": "18.7",
+      "variation": "-1.50"
+    },
+    {
+      "month": "10",
+      "media": "20.3",
+      "precipitation": "36.1",
+      "variation": "-2.60"
+    },
+    {
+      "month": "11",
+      "media": "15.8",
+      "precipitation": "0.8",
+      "variation": "-4.50"
+    },
+    {
+      "month": "12",
+      "media": "14.7",
+      "precipitation": "26.5",
+      "variation": "-1.10"
+    }
+  ],
+  "1982": [
+    {
+      "month": "1",
+      "media": "12.9",
+      "precipitation": "22.3",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "11.9",
+      "precipitation": "43.8",
+      "variation": "-1.00"
+    },
+    {
+      "month": "3",
+      "media": "12.3",
+      "precipitation": "52.8",
+      "variation": "0.40"
+    },
+    {
+      "month": "4",
+      "media": "14.5",
+      "precipitation": "19.5",
+      "variation": "2.20"
+    },
+    {
+      "month": "5",
+      "media": "17.4",
+      "precipitation": "14.2",
+      "variation": "2.90"
+    },
+    {
+      "month": "6",
+      "media": "22.9",
+      "precipitation": "0.7",
+      "variation": "5.50"
+    },
+    {
+      "month": "7",
+      "media": "26.8",
+      "precipitation": "0.0",
+      "variation": "3.90"
+    },
+    {
+      "month": "8",
+      "media": "25.0",
+      "precipitation": "7.1",
+      "variation": "-1.80"
+    },
+    {
+      "month": "9",
+      "media": "22.9",
+      "precipitation": "12.8",
+      "variation": "-2.10"
+    },
+    {
+      "month": "10",
+      "media": "19.3",
+      "precipitation": "85.6",
+      "variation": "-3.60"
+    },
+    {
+      "month": "11",
+      "media": "15.4",
+      "precipitation": "19.9",
+      "variation": "-3.90"
+    },
+    {
+      "month": "12",
+      "media": "12.2",
+      "precipitation": "23.9",
+      "variation": "-3.20"
+    }
+  ],
+  "1983": [
+    {
+      "month": "1",
+      "media": "10.8",
+      "precipitation": "0.0",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "9.9",
+      "precipitation": "15.0",
+      "variation": "-0.90"
+    },
+    {
+      "month": "3",
+      "media": "12.5",
+      "precipitation": "47.8",
+      "variation": "2.60"
+    },
+    {
+      "month": "4",
+      "media": "15.0",
+      "precipitation": "0.0",
+      "variation": "2.50"
+    },
+    {
+      "month": "5",
+      "media": "17.8",
+      "precipitation": "3.5",
+      "variation": "2.80"
+    },
+    {
+      "month": "6",
+      "media": "22.4",
+      "precipitation": "0.6",
+      "variation": "4.60"
+    },
+    {
+      "month": "7",
+      "media": "26.2",
+      "precipitation": "2.0",
+      "variation": "3.80"
+    },
+    {
+      "month": "8",
+      "media": "24.9",
+      "precipitation": "50.3",
+      "variation": "-1.30"
+    },
+    {
+      "month": "9",
+      "media": "23.6",
+      "precipitation": "8.8",
+      "variation": "-1.30"
+    },
+    {
+      "month": "10",
+      "media": "19.8",
+      "precipitation": "6.7",
+      "variation": "-3.80"
+    },
+    {
+      "month": "11",
+      "media": "16.9",
+      "precipitation": "21.9",
+      "variation": "-2.90"
+    },
+    {
+      "month": "12",
+      "media": "12.6",
+      "precipitation": "44.7",
+      "variation": "-4.30"
+    }
+  ],
+  "1984": [
+    {
+      "month": "1",
+      "media": "11.4",
+      "precipitation": "14.2",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "11.1",
+      "precipitation": "51.9",
+      "variation": "-0.30"
+    },
+    {
+      "month": "3",
+      "media": "11.2",
+      "precipitation": "40.4",
+      "variation": "0.10"
+    },
+    {
+      "month": "4",
+      "media": "14.9",
+      "precipitation": "12.8",
+      "variation": "3.70"
+    },
+    {
+      "month": "5",
+      "media": "15.9",
+      "precipitation": "108.3",
+      "variation": "1.00"
+    },
+    {
+      "month": "6",
+      "media": "20.6",
+      "precipitation": "0.5",
+      "variation": "4.70"
+    },
+    {
+      "month": "7",
+      "media": "24.8",
+      "precipitation": "0.0",
+      "variation": "4.20"
+    },
+    {
+      "month": "8",
+      "media": "23.9",
+      "precipitation": "26.4",
+      "variation": "-0.90"
+    },
+    {
+      "month": "9",
+      "media": "21.7",
+      "precipitation": "42.3",
+      "variation": "-2.20"
+    },
+    {
+      "month": "10",
+      "media": "18.3",
+      "precipitation": "49.6",
+      "variation": "-3.40"
+    },
+    {
+      "month": "11",
+      "media": "16.5",
+      "precipitation": "67.7",
+      "variation": "-1.80"
+    },
+    {
+      "month": "12",
+      "media": "11.7",
+      "precipitation": "28.5",
+      "variation": "-4.80"
+    }
+  ],
+  "1985": [
+    {
+      "month": "1",
+      "media": "9.4",
+      "precipitation": "21.9",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "12.8",
+      "precipitation": "18.8",
+      "variation": "3.40"
+    },
+    {
+      "month": "3",
+      "media": "11.8",
+      "precipitation": "46.2",
+      "variation": "-1.00"
+    },
+    {
+      "month": "4",
+      "media": "15.3",
+      "precipitation": "11.4",
+      "variation": "3.50"
+    },
+    {
+      "month": "5",
+      "media": "16.5",
+      "precipitation": "41.8",
+      "variation": "1.20"
+    },
+    {
+      "month": "6",
+      "media": "22.1",
+      "precipitation": "1.2",
+      "variation": "5.60"
+    },
+    {
+      "month": "7",
+      "media": "26.0",
+      "precipitation": "0.7",
+      "variation": "3.90"
+    },
+    {
+      "month": "8",
+      "media": "24.6",
+      "precipitation": "0.0",
+      "variation": "-1.40"
+    },
+    {
+      "month": "9",
+      "media": "23.7",
+      "precipitation": "54.9",
+      "variation": "-0.90"
+    },
+    {
+      "month": "10",
+      "media": "20.5",
+      "precipitation": "63.9",
+      "variation": "-3.20"
+    },
+    {
+      "month": "11",
+      "media": "14.5",
+      "precipitation": "148.7",
+      "variation": "-6.00"
+    },
+    {
+      "month": "12",
+      "media": "12.9",
+      "precipitation": "42.6",
+      "variation": "-1.60"
+    }
+  ],
+  "1986": [
+    {
+      "month": "1",
+      "media": "11.5",
+      "precipitation": "31.7",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "10.8",
+      "precipitation": "66.5",
+      "variation": "-0.70"
+    },
+    {
+      "month": "3",
+      "media": "12.5",
+      "precipitation": "18.3",
+      "variation": "1.70"
+    },
+    {
+      "month": "4",
+      "media": "13.6",
+      "precipitation": "61.5",
+      "variation": "1.10"
+    },
+    {
+      "month": "5",
+      "media": "19.6",
+      "precipitation": "6.8",
+      "variation": "6.00"
+    },
+    {
+      "month": "6",
+      "media": "21.5",
+      "precipitation": "2.0",
+      "variation": "1.90"
+    },
+    {
+      "month": "7",
+      "media": "24.2",
+      "precipitation": "36.7",
+      "variation": "2.70"
+    },
+    {
+      "month": "8",
+      "media": "25.8",
+      "precipitation": "0.0",
+      "variation": "1.60"
+    },
+    {
+      "month": "9",
+      "media": "23.7",
+      "precipitation": "69.7",
+      "variation": "-2.10"
+    },
+    {
+      "month": "10",
+      "media": "20.5",
+      "precipitation": "130.6",
+      "variation": "-3.20"
+    },
+    {
+      "month": "11",
+      "media": "16.0",
+      "precipitation": "58.9",
+      "variation": "-4.50"
+    },
+    {
+      "month": "12",
+      "media": "12.6",
+      "precipitation": "31.1",
+      "variation": "-3.40"
+    }
+  ],
+  "1987": [
+    {
+      "month": "1",
+      "media": "10.7",
+      "precipitation": "137.4",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "11.1",
+      "precipitation": "112.8",
+      "variation": "0.40"
+    },
+    {
+      "month": "3",
+      "media": "12.7",
+      "precipitation": "23.3",
+      "variation": "1.60"
+    },
+    {
+      "month": "4",
+      "media": "15.9",
+      "precipitation": "1.3",
+      "variation": "3.20"
+    },
+    {
+      "month": "5",
+      "media": "17.5",
+      "precipitation": "41.8",
+      "variation": "1.60"
+    },
+    {
+      "month": "6",
+      "media": "21.9",
+      "precipitation": "1.0",
+      "variation": "4.40"
+    },
+    {
+      "month": "7",
+      "media": "25.7",
+      "precipitation": "2.7",
+      "variation": "3.80"
+    },
+    {
+      "month": "8",
+      "media": "26.6",
+      "precipitation": "0.2",
+      "variation": "0.90"
+    },
+    {
+      "month": "9",
+      "media": "25.4",
+      "precipitation": "18.2",
+      "variation": "-1.20"
+    },
+    {
+      "month": "10",
+      "media": "21.6",
+      "precipitation": "25.6",
+      "variation": "-3.80"
+    },
+    {
+      "month": "11",
+      "media": "15.4",
+      "precipitation": "65.9",
+      "variation": "-6.20"
+    },
+    {
+      "month": "12",
+      "media": "14.0",
+      "precipitation": "95.4",
+      "variation": "-1.40"
+    }
+  ],
+  "1988": [
+    {
+      "month": "1",
+      "media": "13.8",
+      "precipitation": "63.3",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "11.8",
+      "precipitation": "8.7",
+      "variation": "-2.00"
+    },
+    {
+      "month": "3",
+      "media": "13.4",
+      "precipitation": "20.6",
+      "variation": "1.60"
+    },
+    {
+      "month": "4",
+      "media": "15.6",
+      "precipitation": "62.4",
+      "variation": "2.20"
+    },
+    {
+      "month": "5",
+      "media": "18.8",
+      "precipitation": "50.5",
+      "variation": "3.20"
+    },
+    {
+      "month": "6",
+      "media": "21.8",
+      "precipitation": "65.5",
+      "variation": "3.00"
+    },
+    {
+      "month": "7",
+      "media": "25.7",
+      "precipitation": "0.0",
+      "variation": "3.90"
+    },
+    {
+      "month": "8",
+      "media": "26.2",
+      "precipitation": "4.1",
+      "variation": "0.50"
+    },
+    {
+      "month": "9",
+      "media": "22.5",
+      "precipitation": "59.5",
+      "variation": "-3.70"
+    },
+    {
+      "month": "10",
+      "media": "21.3",
+      "precipitation": "33.6",
+      "variation": "-1.20"
+    },
+    {
+      "month": "11",
+      "media": "16.2",
+      "precipitation": "39.1",
+      "variation": "-5.10"
+    },
+    {
+      "month": "12",
+      "media": "12.4",
+      "precipitation": "14.0",
+      "variation": "-3.80"
+    }
+  ],
+  "1989": [
+    {
+      "month": "1",
+      "media": "11.9",
+      "precipitation": "9.9",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "13.0",
+      "precipitation": "9.2",
+      "variation": "1.10"
+    },
+    {
+      "month": "3",
+      "media": "14.2",
+      "precipitation": "33.2",
+      "variation": "1.20"
+    },
+    {
+      "month": "4",
+      "media": "15.1",
+      "precipitation": "32.1",
+      "variation": "0.90"
+    },
+    {
+      "month": "5",
+      "media": "18.9",
+      "precipitation": "22.2",
+      "variation": "3.80"
+    },
+    {
+      "month": "6",
+      "media": "22.6",
+      "precipitation": "1.1",
+      "variation": "3.70"
+    },
+    {
+      "month": "7",
+      "media": "26.5",
+      "precipitation": "9.7",
+      "variation": "3.90"
+    },
+    {
+      "month": "8",
+      "media": "27.1",
+      "precipitation": "38.2",
+      "variation": "0.60"
+    },
+    {
+      "month": "9",
+      "media": "23.1",
+      "precipitation": "82.8",
+      "variation": "-4.00"
+    },
+    {
+      "month": "10",
+      "media": "20.2",
+      "precipitation": "3.4",
+      "variation": "-2.90"
+    },
+    {
+      "month": "11",
+      "media": "17.2",
+      "precipitation": "73.9",
+      "variation": "-3.00"
+    },
+    {
+      "month": "12",
+      "media": "15.3",
+      "precipitation": "53.3",
+      "variation": "-1.90"
+    }
+  ],
+  "1990": [
+    {
+      "month": "1",
+      "media": "12.4",
+      "precipitation": "54.8",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "15.1",
+      "precipitation": "3.8",
+      "variation": "2.70"
+    },
+    {
+      "month": "3",
+      "media": "14.4",
+      "precipitation": "36.9",
+      "variation": "-0.70"
+    },
+    {
+      "month": "4",
+      "media": "14.8",
+      "precipitation": "81.3",
+      "variation": "0.40"
+    },
+    {
+      "month": "5",
+      "media": "19.3",
+      "precipitation": "5.2",
+      "variation": "4.50"
+    },
+    {
+      "month": "6",
+      "media": "23.0",
+      "precipitation": "8.9",
+      "variation": "3.70"
+    },
+    {
+      "month": "7",
+      "media": "25.1",
+      "precipitation": "1.7",
+      "variation": "2.10"
+    },
+    {
+      "month": "8",
+      "media": "26.1",
+      "precipitation": "87.9",
+      "variation": "1.00"
+    },
+    {
+      "month": "9",
+      "media": "25.1",
+      "precipitation": "12.7",
+      "variation": "-1.00"
+    },
+    {
+      "month": "10",
+      "media": "20.7",
+      "precipitation": "121.1",
+      "variation": "-4.40"
+    },
+    {
+      "month": "11",
+      "media": "15.2",
+      "precipitation": "81.3",
+      "variation": "-5.50"
+    },
+    {
+      "month": "12",
+      "media": "11.3",
+      "precipitation": "17.0",
+      "variation": "-3.90"
+    }
+  ],
+  "1991": [
+    {
+      "month": "1",
+      "media": "11.7",
+      "precipitation": "106.5",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "11.2",
+      "precipitation": "95.3",
+      "variation": "-0.50"
+    },
+    {
+      "month": "3",
+      "media": "13.9",
+      "precipitation": "42.2",
+      "variation": "2.70"
+    },
+    {
+      "month": "4",
+      "media": "13.9",
+      "precipitation": "48.6",
+      "variation": "0.00"
+    },
+    {
+      "month": "5",
+      "media": "16.2",
+      "precipitation": "62.9",
+      "variation": "2.30"
+    },
+    {
+      "month": "6",
+      "media": "21.5",
+      "precipitation": "2.8",
+      "variation": "5.30"
+    },
+    {
+      "month": "7",
+      "media": "25.4",
+      "precipitation": "0.1",
+      "variation": "3.90"
+    },
+    {
+      "month": "8",
+      "media": "26.2",
+      "precipitation": "37.1",
+      "variation": "0.80"
+    },
+    {
+      "month": "9",
+      "media": "24.8",
+      "precipitation": "44.3",
+      "variation": "-1.40"
+    },
+    {
+      "month": "10",
+      "media": "18.4",
+      "precipitation": "75.0",
+      "variation": "-6.40"
+    },
+    {
+      "month": "11",
+      "media": "15.2",
+      "precipitation": "29.1",
+      "variation": "-3.20"
+    },
+    {
+      "month": "12",
+      "media": "12.5",
+      "precipitation": "20.1",
+      "variation": "-2.70"
+    }
+  ],
+  "1992": [
+    {
+      "month": "1",
+      "media": "10.9",
+      "precipitation": "26.1",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "11.3",
+      "precipitation": "10.2",
+      "variation": "0.40"
+    },
+    {
+      "month": "3",
+      "media": "13.3",
+      "precipitation": "23.2",
+      "variation": "2.00"
+    },
+    {
+      "month": "4",
+      "media": "15.0",
+      "precipitation": "36.8",
+      "variation": "1.70"
+    },
+    {
+      "month": "5",
+      "media": "19.0",
+      "precipitation": "44.2",
+      "variation": "4.00"
+    },
+    {
+      "month": "6",
+      "media": "20.2",
+      "precipitation": "41.6",
+      "variation": "1.20"
+    },
+    {
+      "month": "7",
+      "media": "24.4",
+      "precipitation": "5.3",
+      "variation": "4.20"
+    },
+    {
+      "month": "8",
+      "media": "26.6",
+      "precipitation": "0.8",
+      "variation": "2.20"
+    },
+    {
+      "month": "9",
+      "media": "23.8",
+      "precipitation": "6.8",
+      "variation": "-2.80"
+    },
+    {
+      "month": "10",
+      "media": "18.9",
+      "precipitation": "71.6",
+      "variation": "-4.90"
+    },
+    {
+      "month": "11",
+      "media": "16.2",
+      "precipitation": "24.7",
+      "variation": "-2.70"
+    },
+    {
+      "month": "12",
+      "media": "13.1",
+      "precipitation": "61.2",
+      "variation": "-3.10"
+    }
+  ],
+  "1993": [
+    {
+      "month": "1",
+      "media": "11.0",
+      "precipitation": "0.0",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "11.3",
+      "precipitation": "34.2",
+      "variation": "0.30"
+    },
+    {
+      "month": "3",
+      "media": "12.6",
+      "precipitation": "7.4",
+      "variation": "1.30"
+    },
+    {
+      "month": "4",
+      "media": "14.9",
+      "precipitation": "83.2",
+      "variation": "2.30"
+    },
+    {
+      "month": "5",
+      "media": "19.0",
+      "precipitation": "37.1",
+      "variation": "4.10"
+    },
+    {
+      "month": "6",
+      "media": "23.1",
+      "precipitation": "0.7",
+      "variation": "4.10"
+    },
+    {
+      "month": "7",
+      "media": "24.7",
+      "precipitation": "0.1",
+      "variation": "1.60"
+    },
+    {
+      "month": "8",
+      "media": "26.2",
+      "precipitation": "3.0",
+      "variation": "1.50"
+    },
+    {
+      "month": "9",
+      "media": "22.6",
+      "precipitation": "59.2",
+      "variation": "-3.60"
+    },
+    {
+      "month": "10",
+      "media": "18.0",
+      "precipitation": "122.9",
+      "variation": "-4.60"
+    },
+    {
+      "month": "11",
+      "media": "14.7",
+      "precipitation": "52.2",
+      "variation": "-3.30"
+    },
+    {
+      "month": "12",
+      "media": "13.2",
+      "precipitation": "23.6",
+      "variation": "-1.50"
+    }
+  ],
+  "1994": [
+    {
+      "month": "1",
+      "media": "11.8",
+      "precipitation": "23.8",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "12.2",
+      "precipitation": "30.8",
+      "variation": "0.40"
+    },
+    {
+      "month": "3",
+      "media": "14.5",
+      "precipitation": "6.4",
+      "variation": "2.30"
+    },
+    {
+      "month": "4",
+      "media": "15.0",
+      "precipitation": "38.9",
+      "variation": "0.50"
+    },
+    {
+      "month": "5",
+      "media": "19.7",
+      "precipitation": "2.2",
+      "variation": "4.70"
+    },
+    {
+      "month": "6",
+      "media": "22.7",
+      "precipitation": "3.9",
+      "variation": "3.00"
+    },
+    {
+      "month": "7",
+      "media": "26.8",
+      "precipitation": "0.0",
+      "variation": "4.10"
+    },
+    {
+      "month": "8",
+      "media": "27.9",
+      "precipitation": "3.2",
+      "variation": "1.10"
+    },
+    {
+      "month": "9",
+      "media": "23.2",
+      "precipitation": "87.1",
+      "variation": "-4.70"
+    },
+    {
+      "month": "10",
+      "media": "19.8",
+      "precipitation": "219.0",
+      "variation": "-3.40"
+    },
+    {
+      "month": "11",
+      "media": "17.2",
+      "precipitation": "83.0",
+      "variation": "-2.60"
+    },
+    {
+      "month": "12",
+      "media": "13.9",
+      "precipitation": "27.8",
+      "variation": "-3.30"
+    }
+  ],
+  "1995": [
+    {
+      "month": "1",
+      "media": "12.1",
+      "precipitation": "20.5",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "14.2",
+      "precipitation": "14.6",
+      "variation": "2.10"
+    },
+    {
+      "month": "3",
+      "media": "13.3",
+      "precipitation": "4.8",
+      "variation": "-0.90"
+    },
+    {
+      "month": "4",
+      "media": "15.4",
+      "precipitation": "10.3",
+      "variation": "2.10"
+    },
+    {
+      "month": "5",
+      "media": "19.4",
+      "precipitation": "1.6",
+      "variation": "4.00"
+    },
+    {
+      "month": "6",
+      "media": "22.0",
+      "precipitation": "21.7",
+      "variation": "2.60"
+    },
+    {
+      "month": "7",
+      "media": "26.0",
+      "precipitation": "0.8",
+      "variation": "4.00"
+    },
+    {
+      "month": "8",
+      "media": "26.3",
+      "precipitation": "29.2",
+      "variation": "0.30"
+    },
+    {
+      "month": "9",
+      "media": "22.3",
+      "precipitation": "78.9",
+      "variation": "-4.00"
+    },
+    {
+      "month": "10",
+      "media": "21.0",
+      "precipitation": "10.8",
+      "variation": "-1.30"
+    },
+    {
+      "month": "11",
+      "media": "17.2",
+      "precipitation": "43.1",
+      "variation": "-3.80"
+    },
+    {
+      "month": "12",
+      "media": "15.1",
+      "precipitation": "60.5",
+      "variation": "-2.10"
+    }
+  ],
+  "1996": [
+    {
+      "month": "1",
+      "media": "14.2",
+      "precipitation": "45.1",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "11.6",
+      "precipitation": "71.6",
+      "variation": "-2.60"
+    },
+    {
+      "month": "3",
+      "media": "12.8",
+      "precipitation": "23.5",
+      "variation": "1.20"
+    },
+    {
+      "month": "4",
+      "media": "15.9",
+      "precipitation": "27.4",
+      "variation": "3.10"
+    },
+    {
+      "month": "5",
+      "media": "18.5",
+      "precipitation": "4.5",
+      "variation": "2.60"
+    },
+    {
+      "month": "6",
+      "media": "22.7",
+      "precipitation": "25.1",
+      "variation": "4.20"
+    },
+    {
+      "month": "7",
+      "media": "25.1",
+      "precipitation": "0.0",
+      "variation": "2.40"
+    },
+    {
+      "month": "8",
+      "media": "25.9",
+      "precipitation": "49.0",
+      "variation": "0.80"
+    },
+    {
+      "month": "9",
+      "media": "21.5",
+      "precipitation": "78.2",
+      "variation": "-4.40"
+    },
+    {
+      "month": "10",
+      "media": "18.5",
+      "precipitation": "87.4",
+      "variation": "-3.00"
+    },
+    {
+      "month": "11",
+      "media": "16.5",
+      "precipitation": "71.6",
+      "variation": "-2.00"
+    },
+    {
+      "month": "12",
+      "media": "13.7",
+      "precipitation": "121.7",
+      "variation": "-2.80"
+    }
+  ],
+  "1997": [
+    {
+      "month": "1",
+      "media": "12.8",
+      "precipitation": "55.8",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "13.3",
+      "precipitation": "5.3",
+      "variation": "0.50"
+    },
+    {
+      "month": "3",
+      "media": "14.4",
+      "precipitation": "39.5",
+      "variation": "1.10"
+    },
+    {
+      "month": "4",
+      "media": "16.2",
+      "precipitation": "28.9",
+      "variation": "1.80"
+    },
+    {
+      "month": "5",
+      "media": "20.1",
+      "precipitation": "11.1",
+      "variation": "3.90"
+    },
+    {
+      "month": "6",
+      "media": "23.0",
+      "precipitation": "44.5",
+      "variation": "2.90"
+    },
+    {
+      "month": "7",
+      "media": "25.0",
+      "precipitation": "1.2",
+      "variation": "2.00"
+    },
+    {
+      "month": "8",
+      "media": "26.3",
+      "precipitation": "28.7",
+      "variation": "1.30"
+    },
+    {
+      "month": "9",
+      "media": "24.6",
+      "precipitation": "27.3",
+      "variation": "-1.70"
+    },
+    {
+      "month": "10",
+      "media": "21.5",
+      "precipitation": "62.3",
+      "variation": "-3.10"
+    },
+    {
+      "month": "11",
+      "media": "16.7",
+      "precipitation": "67.1",
+      "variation": "-4.80"
+    },
+    {
+      "month": "12",
+      "media": "13.7",
+      "precipitation": "74.9",
+      "variation": "-3.00"
+    }
+  ],
+  "1998": [
+    {
+      "month": "1",
+      "media": "13.4",
+      "precipitation": "37.5",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "13.0",
+      "precipitation": "55.7",
+      "variation": "-0.40"
+    },
+    {
+      "month": "3",
+      "media": "14.3",
+      "precipitation": "15.2",
+      "variation": "1.30"
+    },
+    {
+      "month": "4",
+      "media": "16.2",
+      "precipitation": "34.1",
+      "variation": "1.90"
+    },
+    {
+      "month": "5",
+      "media": "19.1",
+      "precipitation": "78.3",
+      "variation": "2.90"
+    },
+    {
+      "month": "6",
+      "media": "23.2",
+      "precipitation": "0.9",
+      "variation": "4.10"
+    },
+    {
+      "month": "7",
+      "media": "25.9",
+      "precipitation": "0.0",
+      "variation": "2.70"
+    },
+    {
+      "month": "8",
+      "media": "26.5",
+      "precipitation": "7.1",
+      "variation": "0.60"
+    },
+    {
+      "month": "9",
+      "media": "24.4",
+      "precipitation": "1.3",
+      "variation": "-2.10"
+    },
+    {
+      "month": "10",
+      "media": "19.0",
+      "precipitation": "63.0",
+      "variation": "-5.40"
+    },
+    {
+      "month": "11",
+      "media": "14.6",
+      "precipitation": "81.0",
+      "variation": "-4.40"
+    },
+    {
+      "month": "12",
+      "media": "12.5",
+      "precipitation": "81.7",
+      "variation": "-2.10"
+    }
+  ],
+  "1999": [
+    {
+      "month": "1",
+      "media": "12.1",
+      "precipitation": "74.9",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "11.4",
+      "precipitation": "11.0",
+      "variation": "-0.70"
+    },
+    {
+      "month": "3",
+      "media": "14.4",
+      "precipitation": "10.2",
+      "variation": "3.00"
+    },
+    {
+      "month": "4",
+      "media": "16.2",
+      "precipitation": "11.2",
+      "variation": "1.80"
+    },
+    {
+      "month": "5",
+      "media": "20.8",
+      "precipitation": "13.8",
+      "variation": "4.60"
+    },
+    {
+      "month": "6",
+      "media": "23.5",
+      "precipitation": "0.5",
+      "variation": "2.70"
+    },
+    {
+      "month": "7",
+      "media": "26.0",
+      "precipitation": "13.2",
+      "variation": "2.50"
+    },
+    {
+      "month": "8",
+      "media": "27.5",
+      "precipitation": "0.0",
+      "variation": "1.50"
+    },
+    {
+      "month": "9",
+      "media": "24.7",
+      "precipitation": "49.2",
+      "variation": "-2.80"
+    },
+    {
+      "month": "10",
+      "media": "21.3",
+      "precipitation": "29.9",
+      "variation": "-3.40"
+    },
+    {
+      "month": "11",
+      "media": "14.2",
+      "precipitation": "61.2",
+      "variation": "-7.10"
+    },
+    {
+      "month": "12",
+      "media": "13.0",
+      "precipitation": "31.4",
+      "variation": "-1.20"
+    }
+  ],
+  "2000": [
+    {
+      "month": "1",
+      "media": "10.9",
+      "precipitation": "29.9",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "13.3",
+      "precipitation": "2.7",
+      "variation": "2.40"
+    },
+    {
+      "month": "3",
+      "media": "14.3",
+      "precipitation": "5.6",
+      "variation": "1.00"
+    },
+    {
+      "month": "4",
+      "media": "16.6",
+      "precipitation": "29.3",
+      "variation": "2.30"
+    },
+    {
+      "month": "5",
+      "media": "20.7",
+      "precipitation": "4.8",
+      "variation": "4.10"
+    },
+    {
+      "month": "6",
+      "media": "23.2",
+      "precipitation": "10.8",
+      "variation": "2.50"
+    },
+    {
+      "month": "7",
+      "media": "25.4",
+      "precipitation": "2.2",
+      "variation": "2.20"
+    },
+    {
+      "month": "8",
+      "media": "26.8",
+      "precipitation": "2.6",
+      "variation": "1.40"
+    },
+    {
+      "month": "9",
+      "media": "23.8",
+      "precipitation": "15.6",
+      "variation": "-3.00"
+    },
+    {
+      "month": "10",
+      "media": "19.8",
+      "precipitation": "37.5",
+      "variation": "-4.00"
+    },
+    {
+      "month": "11",
+      "media": "15.6",
+      "precipitation": "45.3",
+      "variation": "-4.20"
+    },
+    {
+      "month": "12",
+      "media": "14.1",
+      "precipitation": "39.4",
+      "variation": "-1.50"
+    }
+  ],
+  "2001": [
+    {
+      "month": "1",
+      "media": "12.9",
+      "precipitation": "42.3",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "11.9",
+      "precipitation": "57.2",
+      "variation": "-1.00"
+    },
+    {
+      "month": "3",
+      "media": "16.2",
+      "precipitation": "3.0",
+      "variation": "4.30"
+    },
+    {
+      "month": "4",
+      "media": "16.1",
+      "precipitation": "14.5",
+      "variation": "-0.10"
+    },
+    {
+      "month": "5",
+      "media": "18.9",
+      "precipitation": "17.9",
+      "variation": "2.80"
+    },
+    {
+      "month": "6",
+      "media": "23.7",
+      "precipitation": "0.0",
+      "variation": "4.80"
+    },
+    {
+      "month": "7",
+      "media": "25.6",
+      "precipitation": "16.3",
+      "variation": "1.90"
+    },
+    {
+      "month": "8",
+      "media": "27.0",
+      "precipitation": "0.0",
+      "variation": "1.40"
+    },
+    {
+      "month": "9",
+      "media": "22.8",
+      "precipitation": "94.4",
+      "variation": "-4.20"
+    },
+    {
+      "month": "10",
+      "media": "22.4",
+      "precipitation": "13.8",
+      "variation": "-0.40"
+    },
+    {
+      "month": "11",
+      "media": "14.8",
+      "precipitation": "102.9",
+      "variation": "-7.60"
+    },
+    {
+      "month": "12",
+      "media": "11.7",
+      "precipitation": "34.8",
+      "variation": "-3.10"
+    }
+  ],
+  "2002": [
+    {
+      "month": "1",
+      "media": "12.3",
+      "precipitation": "46.6",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "12.7",
+      "precipitation": "7.3",
+      "variation": "0.40"
+    },
+    {
+      "month": "3",
+      "media": "14.6",
+      "precipitation": "46.6",
+      "variation": "1.90"
+    },
+    {
+      "month": "4",
+      "media": "15.7",
+      "precipitation": "82.8",
+      "variation": "1.10"
+    },
+    {
+      "month": "5",
+      "media": "18.3",
+      "precipitation": "76.3",
+      "variation": "2.60"
+    },
+    {
+      "month": "6",
+      "media": "24.1",
+      "precipitation": "20.7",
+      "variation": "5.80"
+    },
+    {
+      "month": "7",
+      "media": "25.1",
+      "precipitation": "57.5",
+      "variation": "1.00"
+    },
+    {
+      "month": "8",
+      "media": "25.0",
+      "precipitation": "119.3",
+      "variation": "-0.10"
+    },
+    {
+      "month": "9",
+      "media": "23.4",
+      "precipitation": "18.9",
+      "variation": "-1.60"
+    },
+    {
+      "month": "10",
+      "media": "20.3",
+      "precipitation": "53.9",
+      "variation": "-3.10"
+    },
+    {
+      "month": "11",
+      "media": "16.4",
+      "precipitation": "106.5",
+      "variation": "-3.90"
+    },
+    {
+      "month": "12",
+      "media": "14.4",
+      "precipitation": "65.8",
+      "variation": "-2.00"
+    }
+  ],
+  "2003": [
+    {
+      "month": "1",
+      "media": "12.1",
+      "precipitation": "42.7",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "11.1",
+      "precipitation": "44.6",
+      "variation": "-1.00"
+    },
+    {
+      "month": "3",
+      "media": "13.6",
+      "precipitation": "14.0",
+      "variation": "2.50"
+    },
+    {
+      "month": "4",
+      "media": "15.9",
+      "precipitation": "29.1",
+      "variation": "2.30"
+    },
+    {
+      "month": "5",
+      "media": "19.5",
+      "precipitation": "26.1",
+      "variation": "3.60"
+    },
+    {
+      "month": "6",
+      "media": "26.2",
+      "precipitation": "2.6",
+      "variation": "6.70"
+    },
+    {
+      "month": "7",
+      "media": "27.8",
+      "precipitation": "0.0",
+      "variation": "1.60"
+    },
+    {
+      "month": "8",
+      "media": "29.4",
+      "precipitation": "1.7",
+      "variation": "1.60"
+    },
+    {
+      "month": "9",
+      "media": "23.8",
+      "precipitation": "70.5",
+      "variation": "-5.60"
+    },
+    {
+      "month": "10",
+      "media": "20.2",
+      "precipitation": "125.6",
+      "variation": "-3.60"
+    },
+    {
+      "month": "11",
+      "media": "16.6",
+      "precipitation": "66.3",
+      "variation": "-3.60"
+    },
+    {
+      "month": "12",
+      "media": "13.1",
+      "precipitation": "49.0",
+      "variation": "-3.50"
+    }
+  ],
+  "2004": [
+    {
+      "month": "1",
+      "media": "12.6",
+      "precipitation": "16.9",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "11.8",
+      "precipitation": "54.6",
+      "variation": "-0.80"
+    },
+    {
+      "month": "3",
+      "media": "12.9",
+      "precipitation": "52.6",
+      "variation": "1.10"
+    },
+    {
+      "month": "4",
+      "media": "15.0",
+      "precipitation": "34.2",
+      "variation": "2.10"
+    },
+    {
+      "month": "5",
+      "media": "17.4",
+      "precipitation": "52.2",
+      "variation": "2.40"
+    },
+    {
+      "month": "6",
+      "media": "23.1",
+      "precipitation": "13.0",
+      "variation": "5.70"
+    },
+    {
+      "month": "7",
+      "media": "25.5",
+      "precipitation": "14.4",
+      "variation": "2.40"
+    },
+    {
+      "month": "8",
+      "media": "26.8",
+      "precipitation": "2.7",
+      "variation": "1.30"
+    },
+    {
+      "month": "9",
+      "media": "25.1",
+      "precipitation": "3.0",
+      "variation": "-1.70"
+    },
+    {
+      "month": "10",
+      "media": "22.0",
+      "precipitation": "13.5",
+      "variation": "-3.10"
+    },
+    {
+      "month": "11",
+      "media": "14.5",
+      "precipitation": "82.6",
+      "variation": "-7.50"
+    },
+    {
+      "month": "12",
+      "media": "13.4",
+      "precipitation": "63.8",
+      "variation": "-1.10"
+    }
+  ],
+  "2005": [
+    {
+      "month": "1",
+      "media": "10.5",
+      "precipitation": "17.7",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "9.5",
+      "precipitation": "50.1",
+      "variation": "-1.00"
+    },
+    {
+      "month": "3",
+      "media": "12.6",
+      "precipitation": "8.3",
+      "variation": "3.10"
+    },
+    {
+      "month": "4",
+      "media": "15.8",
+      "precipitation": "16.6",
+      "variation": "3.20"
+    },
+    {
+      "month": "5",
+      "media": "20.1",
+      "precipitation": "4.7",
+      "variation": "4.30"
+    },
+    {
+      "month": "6",
+      "media": "24.6",
+      "precipitation": "0.0",
+      "variation": "4.50"
+    },
+    {
+      "month": "7",
+      "media": "26.5",
+      "precipitation": "1.6",
+      "variation": "1.90"
+    },
+    {
+      "month": "8",
+      "media": "25.7",
+      "precipitation": "42.5",
+      "variation": "-0.80"
+    },
+    {
+      "month": "9",
+      "media": "23.0",
+      "precipitation": "79.5",
+      "variation": "-2.70"
+    },
+    {
+      "month": "10",
+      "media": "20.8",
+      "precipitation": "21.8",
+      "variation": "-2.20"
+    },
+    {
+      "month": "11",
+      "media": "15.5",
+      "precipitation": "38.7",
+      "variation": "-5.30"
+    },
+    {
+      "month": "12",
+      "media": "11.5",
+      "precipitation": "13.1",
+      "variation": "-4.00"
+    }
+  ],
+  "2006": [
+    {
+      "month": "1",
+      "media": "11.0",
+      "precipitation": "94.8",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "11.1",
+      "precipitation": "70.4",
+      "variation": "0.10"
+    },
+    {
+      "month": "3",
+      "media": "13.6",
+      "precipitation": "27.5",
+      "variation": "2.50"
+    },
+    {
+      "month": "4",
+      "media": "17.1",
+      "precipitation": "30.9",
+      "variation": "3.50"
+    },
+    {
+      "month": "5",
+      "media": "20.2",
+      "precipitation": "9.1",
+      "variation": "3.10"
+    },
+    {
+      "month": "6",
+      "media": "24.1",
+      "precipitation": "2.8",
+      "variation": "3.90"
+    },
+    {
+      "month": "7",
+      "media": "27.3",
+      "precipitation": "3.7",
+      "variation": "3.20"
+    },
+    {
+      "month": "8",
+      "media": "25.7",
+      "precipitation": "29.3",
+      "variation": "-1.60"
+    },
+    {
+      "month": "9",
+      "media": "23.8",
+      "precipitation": "56.3",
+      "variation": "-1.90"
+    },
+    {
+      "month": "10",
+      "media": "22.1",
+      "precipitation": "32.9",
+      "variation": "-1.70"
+    },
+    {
+      "month": "11",
+      "media": "18.0",
+      "precipitation": "0.6",
+      "variation": "-4.10"
+    },
+    {
+      "month": "12",
+      "media": "13.6",
+      "precipitation": "82.6",
+      "variation": "-4.40"
+    }
+  ],
+  "2007": [
+    {
+      "month": "1",
+      "media": "12.7",
+      "precipitation": "6.1",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "14.0",
+      "precipitation": "29.9",
+      "variation": "1.30"
+    },
+    {
+      "month": "3",
+      "media": "13.4",
+      "precipitation": "68.9",
+      "variation": "-0.60"
+    },
+    {
+      "month": "4",
+      "media": "16.9",
+      "precipitation": "111.7",
+      "variation": "3.50"
+    },
+    {
+      "month": "5",
+      "media": "20.5",
+      "precipitation": "2.9",
+      "variation": "3.60"
+    },
+    {
+      "month": "6",
+      "media": "23.3",
+      "precipitation": "0.0",
+      "variation": "2.80"
+    },
+    {
+      "month": "7",
+      "media": "25.4",
+      "precipitation": "0.2",
+      "variation": "2.10"
+    },
+    {
+      "month": "8",
+      "media": "25.6",
+      "precipitation": "61.5",
+      "variation": "0.20"
+    },
+    {
+      "month": "9",
+      "media": "23.1",
+      "precipitation": "95.9",
+      "variation": "-2.50"
+    },
+    {
+      "month": "10",
+      "media": "19.5",
+      "precipitation": "177.9",
+      "variation": "-3.60"
+    },
+    {
+      "month": "11",
+      "media": "14.8",
+      "precipitation": "51.6",
+      "variation": "-4.70"
+    },
+    {
+      "month": "12",
+      "media": "12.9",
+      "precipitation": "5.5",
+      "variation": "-1.90"
+    }
+  ],
+  "2008": [
+    {
+      "month": "1",
+      "media": "13.0",
+      "precipitation": "23.8",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "12.9",
+      "precipitation": "14.3",
+      "variation": "-0.10"
+    },
+    {
+      "month": "3",
+      "media": "13.7",
+      "precipitation": "20.8",
+      "variation": "0.80"
+    },
+    {
+      "month": "4",
+      "media": "16.0",
+      "precipitation": "3.1",
+      "variation": "2.30"
+    },
+    {
+      "month": "5",
+      "media": "18.5",
+      "precipitation": "196.9",
+      "variation": "2.50"
+    },
+    {
+      "month": "6",
+      "media": "22.4",
+      "precipitation": "47.4",
+      "variation": "3.90"
+    },
+    {
+      "month": "7",
+      "media": "25.6",
+      "precipitation": "0.8",
+      "variation": "3.20"
+    },
+    {
+      "month": "8",
+      "media": "26.0",
+      "precipitation": "0.9",
+      "variation": "0.40"
+    },
+    {
+      "month": "9",
+      "media": "23.5",
+      "precipitation": "37.8",
+      "variation": "-2.50"
+    },
+    {
+      "month": "10",
+      "media": "20.0",
+      "precipitation": "130.4",
+      "variation": "-3.50"
+    },
+    {
+      "month": "11",
+      "media": "14.4",
+      "precipitation": "128.0",
+      "variation": "-5.60"
+    },
+    {
+      "month": "12",
+      "media": "11.7",
+      "precipitation": "83.1",
+      "variation": "-2.70"
+    }
+  ],
+  "2009": [
+    {
+      "month": "1",
+      "media": "11.4",
+      "precipitation": "44.2",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "11.5",
+      "precipitation": "30.8",
+      "variation": "0.10"
+    },
+    {
+      "month": "3",
+      "media": "12.8",
+      "precipitation": "30.8",
+      "variation": "1.30"
+    },
+    {
+      "month": "4",
+      "media": "15.0",
+      "precipitation": "41.9",
+      "variation": "2.20"
+    },
+    {
+      "month": "5",
+      "media": "20.3",
+      "precipitation": "12.8",
+      "variation": "5.30"
+    },
+    {
+      "month": "6",
+      "media": "23.5",
+      "precipitation": "0.9",
+      "variation": "3.20"
+    },
+    {
+      "month": "7",
+      "media": "26.5",
+      "precipitation": "0.0",
+      "variation": "3.00"
+    },
+    {
+      "month": "8",
+      "media": "26.8",
+      "precipitation": "8.4",
+      "variation": "0.30"
+    },
+    {
+      "month": "9",
+      "media": "23.3",
+      "precipitation": "207.3",
+      "variation": "-3.50"
+    },
+    {
+      "month": "10",
+      "media": "19.9",
+      "precipitation": "31.3",
+      "variation": "-3.40"
+    },
+    {
+      "month": "11",
+      "media": "16.7",
+      "precipitation": "43.0",
+      "variation": "-3.20"
+    },
+    {
+      "month": "12",
+      "media": "13.2",
+      "precipitation": "88.8",
+      "variation": "-3.50"
+    }
+  ],
+  "2010": [
+    {
+      "month": "1",
+      "media": "11.3",
+      "precipitation": "125.7",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "11.8",
+      "precipitation": "46.3",
+      "variation": "0.50"
+    },
+    {
+      "month": "3",
+      "media": "12.3",
+      "precipitation": "61.2",
+      "variation": "0.50"
+    },
+    {
+      "month": "4",
+      "media": "15.3",
+      "precipitation": "25.0",
+      "variation": "3.00"
+    },
+    {
+      "month": "5",
+      "media": "17.9",
+      "precipitation": "114.5",
+      "variation": "2.60"
+    },
+    {
+      "month": "6",
+      "media": "21.6",
+      "precipitation": "5.3",
+      "variation": "3.70"
+    },
+    {
+      "month": "7",
+      "media": "26.2",
+      "precipitation": "5.5",
+      "variation": "4.60"
+    },
+    {
+      "month": "8",
+      "media": "25.8",
+      "precipitation": "6.5",
+      "variation": "-0.40"
+    },
+    {
+      "month": "9",
+      "media": "23.3",
+      "precipitation": "53.7",
+      "variation": "-2.50"
+    },
+    {
+      "month": "10",
+      "media": "19.2",
+      "precipitation": "144.5",
+      "variation": "-4.10"
+    },
+    {
+      "month": "11",
+      "media": "15.0",
+      "precipitation": "25.3",
+      "variation": "-4.20"
+    },
+    {
+      "month": "12",
+      "media": "12.1",
+      "precipitation": "40.0",
+      "variation": "-2.90"
+    }
+  ],
+  "2011": [
+    {
+      "month": "1",
+      "media": "11.4",
+      "precipitation": "66.1",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "12.3",
+      "precipitation": "46.7",
+      "variation": "0.90"
+    },
+    {
+      "month": "3",
+      "media": "13.5",
+      "precipitation": "36.9",
+      "variation": "1.20"
+    },
+    {
+      "month": "4",
+      "media": "17.7",
+      "precipitation": "24.2",
+      "variation": "4.20"
+    },
+    {
+      "month": "5",
+      "media": "20.3",
+      "precipitation": "43.4",
+      "variation": "2.60"
+    },
+    {
+      "month": "6",
+      "media": "22.4",
+      "precipitation": "25.9",
+      "variation": "2.10"
+    },
+    {
+      "month": "7",
+      "media": "25.0",
+      "precipitation": "14.3",
+      "variation": "2.60"
+    },
+    {
+      "month": "8",
+      "media": "26.3",
+      "precipitation": "0.0",
+      "variation": "1.30"
+    },
+    {
+      "month": "9",
+      "media": "24.5",
+      "precipitation": "13.9",
+      "variation": "-1.80"
+    },
+    {
+      "month": "10",
+      "media": "20.7",
+      "precipitation": "41.1",
+      "variation": "-3.80"
+    },
+    {
+      "month": "11",
+      "media": "17.3",
+      "precipitation": "190.8",
+      "variation": "-3.40"
+    },
+    {
+      "month": "12",
+      "media": "13.9",
+      "precipitation": "9.6",
+      "variation": "-3.40"
+    }
+  ],
+  "2012": [
+    {
+      "month": "1",
+      "media": "11.6",
+      "precipitation": "20.5",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "8.5",
+      "precipitation": "51.7",
+      "variation": "-3.10"
+    },
+    {
+      "month": "3",
+      "media": "13.4",
+      "precipitation": "25.1",
+      "variation": "4.90"
+    },
+    {
+      "month": "4",
+      "media": "15.5",
+      "precipitation": "49.3",
+      "variation": "2.10"
+    },
+    {
+      "month": "5",
+      "media": "19.3",
+      "precipitation": "7.2",
+      "variation": "3.80"
+    },
+    {
+      "month": "6",
+      "media": "24.4",
+      "precipitation": "2.0",
+      "variation": "5.10"
+    },
+    {
+      "month": "7",
+      "media": "25.4",
+      "precipitation": "3.5",
+      "variation": "1.00"
+    },
+    {
+      "month": "8",
+      "media": "27.5",
+      "precipitation": "23.5",
+      "variation": "2.10"
+    },
+    {
+      "month": "9",
+      "media": "23.2",
+      "precipitation": "35.2",
+      "variation": "-4.30"
+    },
+    {
+      "month": "10",
+      "media": "20.6",
+      "precipitation": "90.5",
+      "variation": "-2.60"
+    },
+    {
+      "month": "11",
+      "media": "16.4",
+      "precipitation": "82.8",
+      "variation": "-4.20"
+    },
+    {
+      "month": "12",
+      "media": "13.4",
+      "precipitation": "8.9",
+      "variation": "-3.00"
+    }
+  ],
+  "2013": [
+    {
+      "month": "1",
+      "media": "12.1",
+      "precipitation": "34.6",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "10.9",
+      "precipitation": "20.3",
+      "variation": "-1.20"
+    },
+    {
+      "month": "3",
+      "media": "14.6",
+      "precipitation": "24.7",
+      "variation": "3.70"
+    },
+    {
+      "month": "4",
+      "media": "15.6",
+      "precipitation": "52.7",
+      "variation": "1.00"
+    },
+    {
+      "month": "5",
+      "media": "17.4",
+      "precipitation": "10.2",
+      "variation": "1.80"
+    },
+    {
+      "month": "6",
+      "media": "21.4",
+      "precipitation": "1.8",
+      "variation": "4.00"
+    },
+    {
+      "month": "7",
+      "media": "25.7",
+      "precipitation": "0.7",
+      "variation": "4.30"
+    },
+    {
+      "month": "8",
+      "media": "25.9",
+      "precipitation": "77.7",
+      "variation": "0.20"
+    },
+    {
+      "month": "9",
+      "media": "23.8",
+      "precipitation": "27.0",
+      "variation": "-2.10"
+    },
+    {
+      "month": "10",
+      "media": "22.0",
+      "precipitation": "46.0",
+      "variation": "-1.80"
+    },
+    {
+      "month": "11",
+      "media": "14.5",
+      "precipitation": "152.1",
+      "variation": "-7.50"
+    },
+    {
+      "month": "12",
+      "media": "12.7",
+      "precipitation": "48.3",
+      "variation": "-1.80"
+    }
+  ],
+  "2014": [
+    {
+      "month": "1",
+      "media": "12.7",
+      "precipitation": "41.8",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "12.6",
+      "precipitation": "18.3",
+      "variation": "-0.10"
+    },
+    {
+      "month": "3",
+      "media": "13.6",
+      "precipitation": "13.3",
+      "variation": "1.00"
+    },
+    {
+      "month": "4",
+      "media": "17.1",
+      "precipitation": "28.2",
+      "variation": "3.50"
+    },
+    {
+      "month": "5",
+      "media": "18.6",
+      "precipitation": "23.2",
+      "variation": "1.50"
+    },
+    {
+      "month": "6",
+      "media": "23.5",
+      "precipitation": "55.9",
+      "variation": "4.90"
+    },
+    {
+      "month": "7",
+      "media": "25.2",
+      "precipitation": "0.4",
+      "variation": "1.70"
+    },
+    {
+      "month": "8",
+      "media": "26.0",
+      "precipitation": "10.7",
+      "variation": "0.80"
+    },
+    {
+      "month": "9",
+      "media": "25.4",
+      "precipitation": "39.1",
+      "variation": "-0.60"
+    },
+    {
+      "month": "10",
+      "media": "22.2",
+      "precipitation": "46.3",
+      "variation": "-3.20"
+    },
+    {
+      "month": "11",
+      "media": "17.9",
+      "precipitation": "121.4",
+      "variation": "-4.30"
+    },
+    {
+      "month": "12",
+      "media": "12.8",
+      "precipitation": "37.9",
+      "variation": "-5.10"
+    }
+  ],
+  "2015": [
+    {
+      "month": "1",
+      "media": "11.6",
+      "precipitation": "31.8",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "10.8",
+      "precipitation": "56.6",
+      "variation": "-0.80"
+    },
+    {
+      "month": "3",
+      "media": "13.4",
+      "precipitation": "68.9",
+      "variation": "2.60"
+    },
+    {
+      "month": "4",
+      "media": "16.4",
+      "precipitation": "3.5",
+      "variation": "3.00"
+    },
+    {
+      "month": "5",
+      "media": "20.4",
+      "precipitation": "5.1",
+      "variation": "4.00"
+    },
+    {
+      "month": "6",
+      "media": "24.2",
+      "precipitation": "0.6",
+      "variation": "3.80"
+    },
+    {
+      "month": "7",
+      "media": "28.3",
+      "precipitation": "0.0",
+      "variation": "4.10"
+    },
+    {
+      "month": "8",
+      "media": "26.9",
+      "precipitation": "50.9",
+      "variation": "-1.40"
+    },
+    {
+      "month": "9",
+      "media": "23.6",
+      "precipitation": "189.0",
+      "variation": "-3.30"
+    },
+    {
+      "month": "10",
+      "media": "20.6",
+      "precipitation": "28.0",
+      "variation": "-3.00"
+    },
+    {
+      "month": "11",
+      "media": "16.5",
+      "precipitation": "17.9",
+      "variation": "-4.10"
+    },
+    {
+      "month": "12",
+      "media": "15.0",
+      "precipitation": "0.3",
+      "variation": "-1.50"
+    }
+  ],
+  "2016": [
+    {
+      "month": "1",
+      "media": "14.3",
+      "precipitation": "6.7",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "13.7",
+      "precipitation": "53.7",
+      "variation": "-0.60"
+    },
+    {
+      "month": "3",
+      "media": "13.8",
+      "precipitation": "26.1",
+      "variation": "0.10"
+    },
+    {
+      "month": "4",
+      "media": "16.6",
+      "precipitation": "65.1",
+      "variation": "2.80"
+    },
+    {
+      "month": "5",
+      "media": "18.9",
+      "precipitation": "18.4",
+      "variation": "2.30"
+    },
+    {
+      "month": "6",
+      "media": "23.6",
+      "precipitation": "9.5",
+      "variation": "4.70"
+    },
+    {
+      "month": "7",
+      "media": "26.4",
+      "precipitation": "0.0",
+      "variation": "2.80"
+    },
+    {
+      "month": "8",
+      "media": "25.9",
+      "precipitation": "0.6",
+      "variation": "-0.50"
+    },
+    {
+      "month": "9",
+      "media": "24.5",
+      "precipitation": "96.4",
+      "variation": "-1.40"
+    },
+    {
+      "month": "10",
+      "media": "21.6",
+      "precipitation": "69.5",
+      "variation": "-2.90"
+    },
+    {
+      "month": "11",
+      "media": "17.1",
+      "precipitation": "51.5",
+      "variation": "-4.50"
+    },
+    {
+      "month": "12",
+      "media": "14.8",
+      "precipitation": "132.0",
+      "variation": "-2.30"
+    }
+  ],
+  "2017": [
+    {
+      "month": "1",
+      "media": "11.3",
+      "precipitation": "147.4",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "14.0",
+      "precipitation": "18.8",
+      "variation": "2.70"
+    },
+    {
+      "month": "3",
+      "media": "15.0",
+      "precipitation": "46.9",
+      "variation": "1.00"
+    },
+    {
+      "month": "4",
+      "media": "16.0",
+      "precipitation": "8.5",
+      "variation": "1.00"
+    },
+    {
+      "month": "5",
+      "media": "20.4",
+      "precipitation": "1.8",
+      "variation": "4.40"
+    },
+    {
+      "month": "6",
+      "media": "24.9",
+      "precipitation": "40.9",
+      "variation": "4.50"
+    },
+    {
+      "month": "7",
+      "media": "26.9",
+      "precipitation": "8.6",
+      "variation": "2.00"
+    },
+    {
+      "month": "8",
+      "media": "27.9",
+      "precipitation": "5.7",
+      "variation": "1.00"
+    },
+    {
+      "month": "9",
+      "media": "23.2",
+      "precipitation": "94.0",
+      "variation": "-4.70"
+    },
+    {
+      "month": "10",
+      "media": "20.9",
+      "precipitation": "41.5",
+      "variation": "-2.30"
+    },
+    {
+      "month": "11",
+      "media": "15.4",
+      "precipitation": "34.7",
+      "variation": "-5.50"
+    },
+    {
+      "month": "12",
+      "media": "13.1",
+      "precipitation": "27.2",
+      "variation": "-2.30"
+    }
+  ],
+  "2018": [
+    {
+      "month": "1",
+      "media": "13.9",
+      "precipitation": "10.4",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "10.3",
+      "precipitation": "94.0",
+      "variation": "-3.60"
+    },
+    {
+      "month": "3",
+      "media": "13.8",
+      "precipitation": "72.3",
+      "variation": "3.50"
+    },
+    {
+      "month": "4",
+      "media": "17.2",
+      "precipitation": "53.5",
+      "variation": "3.40"
+    },
+    {
+      "month": "5",
+      "media": "18.7",
+      "precipitation": "36.2",
+      "variation": "1.50"
+    },
+    {
+      "month": "6",
+      "media": "23.5",
+      "precipitation": "14.6",
+      "variation": "4.80"
+    },
+    {
+      "month": "7",
+      "media": "26.8",
+      "precipitation": "0.1",
+      "variation": "3.30"
+    },
+    {
+      "month": "8",
+      "media": "27.8",
+      "precipitation": "9.2",
+      "variation": "1.00"
+    },
+    {
+      "month": "9",
+      "media": "25.6",
+      "precipitation": "33.2",
+      "variation": "-2.20"
+    },
+    {
+      "month": "10",
+      "media": "20.5",
+      "precipitation": "133.2",
+      "variation": "-5.10"
+    },
+    {
+      "month": "11",
+      "media": "16.2",
+      "precipitation": "39.9",
+      "variation": "-4.30"
+    },
+    {
+      "month": "12",
+      "media": "14.2",
+      "precipitation": "26.7",
+      "variation": "-2.00"
+    }
+  ],
+  "2019": [
+    {
+      "month": "1",
+      "media": "11.5",
+      "precipitation": "23.9",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "12.7",
+      "precipitation": "2.8",
+      "variation": "1.20"
+    },
+    {
+      "month": "3",
+      "media": "13.9",
+      "precipitation": "9.3",
+      "variation": "1.20"
+    },
+    {
+      "month": "4",
+      "media": "15.6",
+      "precipitation": "19.4",
+      "variation": "1.70"
+    },
+    {
+      "month": "5",
+      "media": "18.3",
+      "precipitation": "11.2",
+      "variation": "2.70"
+    },
+    {
+      "month": "6",
+      "media": "23.5",
+      "precipitation": "0.0",
+      "variation": "5.20"
+    },
+    {
+      "month": "7",
+      "media": "27.9",
+      "precipitation": "1.4",
+      "variation": "4.40"
+    },
+    {
+      "month": "8",
+      "media": "27.1",
+      "precipitation": "14.6",
+      "variation": "-0.80"
+    },
+    {
+      "month": "9",
+      "media": "24.9",
+      "precipitation": "44.0",
+      "variation": "-2.20"
+    },
+    {
+      "month": "10",
+      "media": "21.3",
+      "precipitation": "139.2",
+      "variation": "-3.60"
+    },
+    {
+      "month": "11",
+      "media": "15.4",
+      "precipitation": "103.5",
+      "variation": "-5.90"
+    },
+    {
+      "month": "12",
+      "media": "15.0",
+      "precipitation": "63.8",
+      "variation": "-0.40"
+    }
+  ],
+  "2020": [
+    {
+      "month": "1",
+      "media": "13.1",
+      "precipitation": "66.6",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "14.3",
+      "precipitation": "0.1",
+      "variation": "1.20"
+    },
+    {
+      "month": "3",
+      "media": "14.9",
+      "precipitation": "39.3",
+      "variation": "0.60"
+    },
+    {
+      "month": "4",
+      "media": "17.3",
+      "precipitation": "81.3",
+      "variation": "2.40"
+    },
+    {
+      "month": "5",
+      "media": "21.1",
+      "precipitation": "17.5",
+      "variation": "3.80"
+    },
+    {
+      "month": "6",
+      "media": "23.2",
+      "precipitation": "19.7",
+      "variation": "2.10"
+    },
+    {
+      "month": "7",
+      "media": "27.2",
+      "precipitation": "0.2",
+      "variation": "4.00"
+    },
+    {
+      "month": "8",
+      "media": "27.2",
+      "precipitation": "24.6",
+      "variation": "0.00"
+    },
+    {
+      "month": "9",
+      "media": "24.1",
+      "precipitation": "78.1",
+      "variation": "-3.10"
+    },
+    {
+      "month": "10",
+      "media": "19.3",
+      "precipitation": "17.7",
+      "variation": "-4.80"
+    },
+    {
+      "month": "11",
+      "media": "17.7",
+      "precipitation": "35.5",
+      "variation": "-1.60"
+    },
+    {
+      "month": "12",
+      "media": "13.8",
+      "precipitation": "56.6",
+      "variation": "-3.90"
+    }
+  ],
+  "2021": [
+    {
+      "month": "1",
+      "media": "12.0",
+      "precipitation": "53.3",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "14.3",
+      "precipitation": "4.6",
+      "variation": "2.30"
+    },
+    {
+      "month": "3",
+      "media": "14.2",
+      "precipitation": "44.3",
+      "variation": "-0.10"
+    },
+    {
+      "month": "4",
+      "media": "15.6",
+      "precipitation": "20.8",
+      "variation": "1.40"
+    },
+    {
+      "month": "5",
+      "media": "19.3",
+      "precipitation": "53.2",
+      "variation": "3.70"
+    },
+    {
+      "month": "6",
+      "media": "24.5",
+      "precipitation": "18.9",
+      "variation": "5.20"
+    },
+    {
+      "month": "7",
+      "media": "26.8",
+      "precipitation": "1.2",
+      "variation": "2.30"
+    },
+    {
+      "month": "8",
+      "media": "27.7",
+      "precipitation": "26.0",
+      "variation": "0.90"
+    },
+    {
+      "month": "9",
+      "media": "26.0",
+      "precipitation": "29.1",
+      "variation": "-1.70"
+    },
+    {
+      "month": "10",
+      "media": "20.7",
+      "precipitation": "46.7",
+      "variation": "-5.30"
+    },
+    {
+      "month": "11",
+      "media": "15.4",
+      "precipitation": "251.8",
+      "variation": "-5.30"
+    },
+    {
+      "month": "12",
+      "media": "13.9",
+      "precipitation": "11.0",
+      "variation": "-1.50"
+    }
+  ],
+  "2022": [
+    {
+      "month": "1",
+      "media": "11.7",
+      "precipitation": "9.1",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "13.3",
+      "precipitation": "0.5",
+      "variation": "1.60"
+    },
+    {
+      "month": "3",
+      "media": "14.4",
+      "precipitation": "50.5",
+      "variation": "1.10"
+    },
+    {
+      "month": "4",
+      "media": "16.1",
+      "precipitation": "31.6",
+      "variation": "1.70"
+    },
+    {
+      "month": "5",
+      "media": "21.2",
+      "precipitation": "64.4",
+      "variation": "5.10"
+    },
+    {
+      "month": "6",
+      "media": "25.7",
+      "precipitation": "5.4",
+      "variation": "4.50"
+    },
+    {
+      "month": "7",
+      "media": "28.6",
+      "precipitation": "0.0",
+      "variation": "2.90"
+    },
+    {
+      "month": "8",
+      "media": "29.0",
+      "precipitation": "6.3",
+      "variation": "0.40"
+    },
+    {
+      "month": "9",
+      "media": "26.1",
+      "precipitation": "24.7",
+      "variation": "-2.90"
+    },
+    {
+      "month": "10",
+      "media": "23.4",
+      "precipitation": "13.7",
+      "variation": "-2.70"
+    },
+    {
+      "month": "11",
+      "media": "18.7",
+      "precipitation": "52.8",
+      "variation": "-4.70"
+    },
+    {
+      "month": "12",
+      "media": "15.9",
+      "precipitation": "34.9",
+      "variation": "-2.80"
+    }
+  ],
+  "2023": [
+    {
+      "month": "1",
+      "media": "12.5",
+      "precipitation": "26.8",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "11.7",
+      "precipitation": "107.6",
+      "variation": "-0.80"
+    },
+    {
+      "month": "3",
+      "media": "15.7",
+      "precipitation": "3.4",
+      "variation": "4.00"
+    },
+    {
+      "month": "4",
+      "media": "17.2",
+      "precipitation": "4.7",
+      "variation": "1.50"
+    },
+    {
+      "month": "5",
+      "media": "20.1",
+      "precipitation": "43.5",
+      "variation": "2.90"
+    },
+    {
+      "month": "6",
+      "media": "24.9",
+      "precipitation": "2.8",
+      "variation": "4.80"
+    },
+    {
+      "month": "7",
+      "media": "28.7",
+      "precipitation": "0.0",
+      "variation": "3.80"
+    },
+    {
+      "month": "8",
+      "media": "27.7",
+      "precipitation": "55.6",
+      "variation": "-1.00"
+    },
+    {
+      "month": "9",
+      "media": "25.4",
+      "precipitation": "67.6",
+      "variation": "-2.30"
+    },
+    {
+      "month": "10",
+      "media": "23.0",
+      "precipitation": "33.6",
+      "variation": "-2.40"
+    },
+    {
+      "month": "11",
+      "media": "18.0",
+      "precipitation": "9.2",
+      "variation": "-5.00"
+    },
+    {
+      "month": "12",
+      "media": "15.2",
+      "precipitation": "3.4",
+      "variation": "-2.80"
+    }
+  ],
+  "2024": [
+    {
+      "month": "1",
+      "media": "14.3",
+      "precipitation": "88.9",
+      "variation": 0
+    },
+    {
+      "month": "2",
+      "media": "14.6",
+      "precipitation": "51.0",
+      "variation": "0.30"
+    },
+    {
+      "month": "3",
+      "media": "15.8",
+      "precipitation": "36.7",
+      "variation": "1.20"
+    },
+    {
+      "month": "4",
+      "variation": "NaN"
+    },
+    {
+      "month": "5",
+      "variation": "NaN"
+    },
+    {
+      "month": "6",
+      "variation": "NaN"
+    },
+    {
+      "month": "7",
+      "variation": "NaN"
+    },
+    {
+      "month": "8",
+      "variation": "NaN"
+    },
+    {
+      "month": "9",
+      "variation": "NaN"
+    },
+    {
+      "month": "10",
+      "variation": "NaN"
+    },
+    {
+      "month": "11",
+      "variation": "NaN"
+    },
+    {
+      "month": "12",
+      "variation": "NaN"
+    }
+  ]
+};
 
     const ctx = document.getElementById('myChart').getContext('2d');
     const labels = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
 
     const datasets = Object.keys(data).map(year => ({
       label: year,
-      data: data[year],
+      data: data[year].map(month => month.variation),
       fill: false,
-      // Puedes personalizar el color de cada línea aquí
       borderColor: `hsl(${Math.random() * 360}, 100%, 50%)`,
       tension: 0.1
     }));
 
     const myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: labels,
-            datasets: datasets
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: false
-                }
-            }
+      type: 'bar',
+      data: {
+        labels: labels,
+        datasets: datasets
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: false
+          }
         }
+      }
     });
   </script>
 </body>
