@@ -99,11 +99,11 @@
 // console.log(newNumbers);
 
 // reduce() -> devuelve un valor a partir de un array (acumulador, elemento)
-let numbers = [1,2,11,3,4,5,6,7,8,9];
-let newNumbers = numbers.reduce((accumulator, currentValue) => {
-    return accumulator + currentValue;
-});
-console.log(newNumbers);
+// let numbers = [1,2,11,3,4,5,6,7,8,9];
+// let newNumbers = numbers.reduce((accumulator, currentValue) => {
+//     return accumulator + currentValue;
+// });
+// console.log(newNumbers);
 
 // every() -> devuelve true si todos los elementos cumplen una condición
 // let numbers = [1,2,11,3,4,5,6,7,8,9];
@@ -285,12 +285,3 @@ console.log(newNumbers);
 //     }
 // });
 // console.log(usersSortedByName);
-
-
-
-
-
-
-
-
-

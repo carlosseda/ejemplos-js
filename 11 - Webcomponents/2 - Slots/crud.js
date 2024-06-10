@@ -33,10 +33,10 @@ class Crud extends HTMLElement {
   
     <div class="crud">
       <div class="table-section">
-        <slot name="table"></slot>
+        <slot name="left"></slot>
       </div>
       <div class="form-section">
-        <slot name="form"></slot>
+        <slot name="right"></slot>
       </div>
     </div>
     `

@@ -12,7 +12,7 @@ class Faqs extends HTMLElement {
     await this.render()
   }
 
-  loadData () {
+  async loadData () {
     this.data = [
       {
         "question": "¿Qué es un webcomponent?",
