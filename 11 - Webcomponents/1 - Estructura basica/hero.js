@@ -13,8 +13,8 @@
 
 // Para crear un componente se debe usar la clase HTMLElement
 
-class Title extends HTMLElement {
-
+class Hero extends HTMLElement {
+  
   constructor () {
     super()
     this.shadow = this.attachShadow({ mode: 'open' })
@@ -26,13 +26,13 @@ class Title extends HTMLElement {
   connectedCallback () {
     this.render()
   }
-  
+
   render () {
     this.shadow.innerHTML =
     /*html*/`
     <style>
       h1{
-        color: red;
+        color: blue;
         cursor: pointer;
         font-family: 'Poppins', sans-serif;
         margin: 0;
@@ -54,4 +54,4 @@ class Title extends HTMLElement {
   }
 }
 
-customElements.define('title-component', Title);
+customElements.define('hero-component', Hero);

@@ -21,10 +21,6 @@ class Faqs extends HTMLElement {
       {
         "question": "¿Qué es un shadow dom?",
         "answer": "Es un dom encapsulado"
-      },
-      {
-        "question": "¿Qué es un template?",
-        "answer": "Es un fragmento de html"
       }
     ]
   }
@@ -72,6 +68,7 @@ class Faqs extends HTMLElement {
       const faqsContainer = this.shadow.querySelector('.faqs')
       const faqContainer = document.createElement('div')
       faqContainer.classList.add('faq')
+      faqsContainer.appendChild(faqContainer)
       
       const question = document.createElement('h2')
       question.textContent = faq.question
@@ -80,8 +77,6 @@ class Faqs extends HTMLElement {
       const answer = document.createElement('p')
       answer.textContent = faq.answer
       faqContainer.appendChild(answer)
-
-      faqsContainer.appendChild(faqContainer)
     })
   }
 }
