@@ -86,4 +86,4 @@ class LoopBenchmark {
   }
 }
 
-new LoopBenchmark(10000000, ["forEach"])
+new LoopBenchmark(10000000, ["forEach", "for", "while"])
