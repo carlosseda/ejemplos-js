@@ -13,14 +13,11 @@
 
 // Para crear un componente se debe usar la clase HTMLElement
 
-class Hero extends HTMLElement {
-  
+class Menu extends HTMLElement {
+
   constructor () {
     super()
     this.shadow = this.attachShadow({ mode: 'open' })
-    this.title = this.getAttribute('title')
-    this.color = this.getAttribute('color')
-    this.message = this.getAttribute('message')
   }
 
   connectedCallback () {
@@ -31,27 +28,22 @@ class Hero extends HTMLElement {
     this.shadow.innerHTML =
     /*html*/`
     <style>
-      h1{
-        color: blue;
-        cursor: pointer;
-        font-family: 'Poppins', sans-serif;
-        margin: 0;
+      ul{
+        display: flex;
+        gap: 1rem;
+        list-style:none;
       }
     </style>
 
-    <div class="title">
-      <h1>${this.title}</h1>
-    </div>
+    <nav>
+      <ul>
+        <li>Inicio</li>
+        <li>Contacto</li>
+        <li>Tienda</li>
+      </ul>
+    </nav>
     `
-
-    this.shadow.querySelector('.title').addEventListener('click', () => {
-      this.alertMessage()
-    })
-  }
-
-  alertMessage () {
-    alert(this.message)
   }
 }
 
-customElements.define('hero-component', Hero);
+customElements.define('menu-component', Menu);

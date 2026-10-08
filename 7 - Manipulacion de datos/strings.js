@@ -53,7 +53,7 @@
 // console.log(sentence.lastIndexOf("soy"));
 
 // replace() -> reemplaza una palabra por otra
-// let price = "5,6";
+// let price = "5,6,";
 // console.log(price.replace(",", "."));
 
 // replaceAll() -> reemplaza todas las apariciones de una palabra por otra
@@ -180,10 +180,10 @@
 
 // Comprobar si es un número de IBAN
 // /^ES\d{22}$/ -> busca ES seguido de 22 números
-// let iban = "ES 12 3456 7890 123456789012";
-// iban = iban.replace(/\s/g, "");
-// console.log(iban);
-// let regex = /^ES\d{22}$/g;
+let iban = "ES 12 3456 7890 123456789012";
+iban = iban.replace(/\s/g, "");
+console.log(iban);
+let regex = /^ES\d{22}$/g;
 
 // console.log(iban.match(regex));
 

@@ -2,20 +2,20 @@ import { validateForm } from './validator.js';
 
 export default (() => {
 
-  const form = document.querySelector('#form');
+  const form = document.querySelector('form');
   const sendFormButton = document.querySelector('#send-form-button');
 
-  sendFormButton.addEventListener('click', event => {
+  sendFormButton.addEventListener('click', async event => {
 
     event.preventDefault();
 
-    for(let element of form.elements){
-      console.log(element.dataset.validate)
-    };
+    // for(let element of form.elements){
+    //   console.log(element.dataset.validate)
+    // };
 
-    if(!validateForm(form.elements)){
-      return;
-    }
+    // if(!validateForm(form.elements)){
+    //   return;
+    // }
 
     // Podemos recoger el valor de todos los inputs de un formulario mediante el objeto FormData. 
     // Para ello debemos pasar como parámetro el formulario al que queremos acceder. 
@@ -35,7 +35,7 @@ export default (() => {
     let formData = new FormData(form);
     let formDataJson = Object.fromEntries(formData.entries());
 
-    fetch('http://127.0.0.1:8080/api/admin/faqs', {
+    fetch('http://127.0.0.1:8080/api/admin/cities', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -56,6 +56,32 @@ export default (() => {
     }).catch(error => {
       console.log(error);
     });
+
+
+    //O su forma moderna con async / await
+
+    try{
+
+      const response = await fetch('http://127.0.0.1:8080/api/admin/cities', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formDataJson)
+      })
+
+      const data =  await response.json()
+
+      document.dispatchEvent(new CustomEvent('message', {
+        detail: {
+          text: 'Formulario enviado correctamente',
+          type: 'success'
+        }
+      }));
+
+    }catch(error){
+      console.log(error);
+    }
   });
   
 })();

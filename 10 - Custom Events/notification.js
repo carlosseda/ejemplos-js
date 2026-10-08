@@ -8,7 +8,7 @@ export default (() => {
     let notificationText = document.getElementById("notification-message");
 
     // Podemos utilizar los parámetros que se han enviado en el evento, escribiendo event.detail y a continuación el nombre del parámetro.
-    notificationText.innerHTML = event.detail.text;
+    notificationText.textContent = event.detail.text;
     notification.classList.add(event.detail.type);
     notification.classList.add("active");
 

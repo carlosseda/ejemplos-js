@@ -1,5 +1,5 @@
 <doctype html>
-<html lang="es">
+  <html lang="es">
 
   <head>
     <meta charset="utf-8">
@@ -15,12 +15,17 @@
   <body>
 
     <main>
+      <header-component>
+        <title-component title="logo" color="black"></title-component>
+        <menu-component></menu-component>
+      </header-component>
       <crud-component>
-        <table-component slot="right"></table-component>
-        <form-component slot="left"></form-component>
+        <title-component title="carlitos" color="black" slot="cositas"></title-component>
+        <table-component slot="cositas"></table-component>
+        <form-component slot="mas-cositas"></form-component>
       </crud-component>
     </main>
 
   </body>
 
-</html>
+  </html>

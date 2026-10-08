@@ -24,6 +24,10 @@
   background-color: hsl(0, 100%, 50%);
 }
 
+#notification.info {
+  background-color: hsl(249, 100%, 50%);
+}
+
 #notification span {
   color: hsl(0, 0%, 100%);
   font-weight: 600;

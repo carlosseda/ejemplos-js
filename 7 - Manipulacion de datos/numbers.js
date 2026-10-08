@@ -5,7 +5,7 @@
 // console.log(number.toFixed(2));
 
 // toPrecision() -> devuelve el número con el número de dígitos indicado
-// let number = "3.14159265359";
+// let number = 3.14159265359;
 // console.log(number.toPrecision(2));
 
 // toString() -> devuelve el número en formato string
@@ -20,12 +20,13 @@
 // let number = 3.14159265359;
 // console.log(Number.isInteger(number));
 
+
 // Comprobamos si un número es NaN
 // let number = NaN;
 // console.log(Number.isNaN(number));
 
 // redondear un número
-// let number = 3.14159265359;
+// let number = 3.4159265359;
 // console.log(Math.round(number));
 
 // redondear un número a dos decimales

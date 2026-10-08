@@ -27,16 +27,6 @@
 // numbers.splice(2,1);
 // console.log(numbers);
 
-// splice() -> añade un elemento en una posición del array (donde empieza, cuantos elementos, elemento)
-// let numbers = [1,2,11,3,4,5,6,7,8,9];
-// numbers.splice(2,0,3.5);
-// console.log(numbers);
-
-// splice() -> sustituye un elemento en una posición del array (donde empieza, cuantos elementos, elemento)
-// let numbers = [1,2,11,3,4,5,6,7,8,9];
-// numbers.splice(2,1,3.5);
-// console.log(numbers);
-
 // slice() -> crea un nuevo array a partir de otro array (donde empieza, donde termina)
 // let numbers = [1,2,11,3,4,5,6,7,8,9];
 // let newNumbers = numbers.slice(2,5);
@@ -98,6 +88,15 @@
 // });
 // console.log(newNumbers);
 
+// let prices = [1,2,11,3,4,5,6,7,8,9];
+// let total = 0
+
+// prices.forEach(price => {
+//   total += price
+// })
+
+// console.log(total)
+
 // reduce() -> devuelve un valor a partir de un array (acumulador, elemento)
 // let numbers = [1,2,11,3,4,5,6,7,8,9];
 // let newNumbers = numbers.reduce((accumulator, currentValue) => {
@@ -136,19 +135,6 @@
 //     console.log(number);
 // }
 
-// toLocateString() -> devuelve el número con el formato de la localización (idioma, moneda, etc)
-
-// let number = 123456789.12345;
-
-// console.log(number.toLocaleString("es-ES", {style: "currency", currency: "EUR"}));
-
-// Usa la moneda de inglaterra
-
-// console.log(number.toLocaleString("en-GB", {style: "currency", currency: "GBP"}));
-
-// Los style que se puede usar con toLocaleString son: currency, percent, decimal
-// Por ejemplo, si queremos que nos devuelva el número con el símbolo de porcentaje
-
 // flat() -> devuelve un array con los elementos de un array anidado
 
 // let array = [1,2,3, [4,5,6, [7,8,9]]];
@@ -165,15 +151,21 @@
 
 // Acceso a los valores e iteración de un objeto con entries()
 //Podemos usar destructuring para acceder a los valores del array
-// let user = {
-//     id: 5,
-//     name: "Juan",
-//     lastname: "Perez",
-//     age: "25",
-//     email: "juanperez@gmail.com",
-// };
+let user = {
+    id: 5,
+    name: "Juan",
+    lastname: "Perez",
+    age: "25",
+    email: "juanperez@gmail.com"
+};
 
-// console.log(user.name);
+const {name, age} = user;
+
+console.log(name, age)
+
+//  Object.entries(user).forEach(([key, value]) => {
+//   console.log(key, value)
+// });
 
 // Object.entries(user).forEach(([key, value]) => {
 //     console.log(`${key}: ${value}`);
@@ -183,7 +175,7 @@
 
 // let users = [
 //     {
-//         name: "Juan",
+//         name: "Carlos",
 //         age: 23,
 //         city: "Madrid",
 //         cart: [
@@ -232,7 +224,7 @@
 // Busca los usuarios que hayan comprado un ordenador
 // let usersWithComputer = users.filter(user => {
 //     return user.cart.some(product => {
-//         return product.productName === "Ordenador";
+//         return product.productName === "Libro";
 //     });
 // });
 // console.log(usersWithComputer);
